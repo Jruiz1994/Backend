@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grabar producto</title>
+</head>
+
+<body>
+    <form action="/api/productos" method="POST">
+        <div>
+            Title:<input type="text" name="title" />
+        </div>
+        <div>
+            Price:<input type="number" name="price" />
+        </div>
+        <div>
+            Foto: <input type="text" name="thumbnail" />
+        </div>
+        <button type="submit">Enviar data</button>
+    </form>
+</body>
+
+</html>
