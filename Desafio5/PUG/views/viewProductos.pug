@@ -1,0 +1,25 @@
+html 
+  head
+    title Listado de Productos 
+    include ../partials/menu
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'
+    integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous')
+    
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+  body
+    h1(style="text-align: center") Listado de Productos:
+    if(productos.length <1) 
+      h2(style="text-align: center; color:grey") No se encontraron productos
+    else
+      table(style="margin: 0 auto; width:50%" class="table")
+        thead
+          th(scope="col") Nombre
+          th(scope="col") Precio
+          th(scope="col") Foto
+        tbody
+        each producto in productos
+          tr
+            td #{producto.producto.title}
+            td #{producto.producto.price}
+            td
+              img(src=producto.producto.thumbnail style="width: 150px;")

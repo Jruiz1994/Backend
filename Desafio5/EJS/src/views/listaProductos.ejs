@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Listado de Productos</title>
+    <meta name="description" content="Vista de productos">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <div style="margin: 50px; text-align: center">
+        <a style="margin-right: 50px;" href="/"><button href='/' type="button" class="btn btn-primary">Crear Producto</button></a>
+
+        <a style="margin-left: 50px;" href="/productos"><button type="button" class="btn btn-success">Listado de Productos</button></a>
+    </div>
+
+    <h1 style="text-align: center;">Listado de Productos:</h1>
+    <% if(productos.length < 1){ %>
+        <h2 style=" text-align: center; color:grey ">No se encontraron productos</h2>
+        <% } else { %>
+            <table style="margin: 0 auto; width:50% " class="table ">
+                <thead>
+                    <tr>
+                        <th scope="col ">Nombre:</th>
+                        <th scope="col ">Precio:</th>
+                        <th scope="col ">Foto:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% productos.forEach(function(producto){ %>
+                        <tr>
+                            <td>
+                                <%=producto.producto.title%>
+                            </td>
+                            <td> $
+                                <%=producto.producto.price%>
+                            </td>
+                            <td> <img style="width: 150px; " src="<%=producto.producto.thumbnail%>"> </td>
+                        </tr>
+                        <% }) %>
+                </tbody>
+            </table>
+            <% } %>
+</body>
+
+</html>

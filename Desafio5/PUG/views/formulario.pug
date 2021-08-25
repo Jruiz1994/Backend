@@ -1,0 +1,21 @@
+html 
+  head
+    title Crear producto
+    include ../partials/menu
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'
+    integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous')
+    
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+  body
+    form(action="/productos" method="POST" style="width:50%; margin:0 auto;")
+      div(class="mb-3")
+        label(for="title" class="form-label") Nombre 
+        input(type="text" name="title" id="title" class="form-control")
+      div(class="mb-3")
+        label(for="price" class="form-label") Precio
+        input(type="number" name="price" id="price" class="form-control")
+      div(class="mb-3")
+        label(for="thumbnail" class="form-label") URL de imagen 
+        input(type="text" name="thumbnail" id="thumbnail" class="form-control")
+      
+      input(type="submit" value="Enviar")
