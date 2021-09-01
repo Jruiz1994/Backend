@@ -1,0 +1,43 @@
+[{
+        "title": "Fernet Branca",
+        "price": "560",
+        "thumbnail": "https://geant.vteximg.com.br/arquivos/ids/250853-700-700/541240.jpg?v=637260236555230000",
+        "id": 1
+    },
+    {
+        "title": "Martini Bianco",
+        "price": "340",
+        "thumbnail": "https://geant.vteximg.com.br/arquivos/ids/213075-700-700/583310.jpg?v=636499902004070000",
+        "id": 2
+    },
+    {
+        "title": "Coca Cola 2L",
+        "price": "120",
+        "thumbnail": "https://geant.vteximg.com.br/arquivos/ids/274776-1000-1000/591225.jpg?v=637587617876030000",
+        "id": 3
+    },
+    {
+        "title": "Ron Bacardi",
+        "price": "545",
+        "thumbnail": "https://geant.vteximg.com.br/arquivos/ids/266301-1000-1000/542865.jpg?v=637447786175100000",
+        "id": 4
+    },
+    {
+        "title": "Vodka Smirnoff",
+        "price": "469",
+        "thumbnail": "https://geant.vteximg.com.br/arquivos/ids/274215-700-700/543000.jpg?v=637582597395600000",
+        "id": 5
+    },
+    {
+        "title": "Vino Faisan",
+        "price": "100",
+        "thumbnail": "https://geant.vteximg.com.br/arquivos/ids/199194-1000-1000/561704-1.jpg?v=636348545120230000",
+        "id": 6
+    },
+    {
+        "title": "Fanta 2L",
+        "price": "110",
+        "thumbnail": "https://www.distribuidorabebidas.com.uy/wp-content/uploads/sites/31/2020/01/fanta-1.5.jpg",
+        "id": 7
+    }
+]
