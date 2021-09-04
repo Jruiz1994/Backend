@@ -1,6 +1,5 @@
-const { promises: fs } = require('fs');
-
-class ContenedorProductos {
+const fs = require("fs");
+class Contenedor {
     constructor(nombre) {
         this.nombre = nombre, this.productos = [], this.id = 0;
     }
@@ -25,7 +24,7 @@ class ContenedorProductos {
     }
 
     async saveList(list) {
-        await fs.promises.writeFile(this.nombre, list, (err) => {
+        await fs.writeFile(this.nombre, list, (err) => {
             if (err) throw err;
         });
     }
@@ -94,4 +93,4 @@ class ContenedorProductos {
     }
 }
 
-module.exports = ContenedorProductos
+module.exports = Contenedor
