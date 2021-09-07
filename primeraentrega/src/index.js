@@ -119,3 +119,8 @@ routerCarrito.delete('/:idCart/productos/:id_prod', async(req, res) => {
 
 const port = 8080;
 app.listen(port, () => { console.log(`Server escuchando en: 8080`) })
+app.get('*', (req, res) => {
+
+  res.send ({ error: `La ruta ${req.originalUrl} no existe.`}) 
+
+});
