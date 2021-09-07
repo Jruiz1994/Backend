@@ -1,7 +1,11 @@
-function isAdmin(user) {
-    if (user.admin === 'true') {
-        return true
+async function validateAdmin(req, res, next) {
+    const { headers } = req
+    if (JSON.parse(headers.admin) == true) {
+        next();
+    } else {
+        res.send({ error: "Usuario no autorizado" });
+        throw new Error("El usuario no es admin.");
     }
 }
 
-module.exports = validateAdmin
+module.exports = { validateAdmin }

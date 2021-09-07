@@ -1,7 +1,7 @@
 const express = require('express');
 const { Router } = express;
 const app = express();
-// const validateAdmin = require('./validateAdmin')
+const { validateAdmin } = require('./validateAdmin.js')
 const Contenedor = require('./contenedor')
 let conten = new Contenedor('./src/productos.json')
 let carrito = new Contenedor('./src/carrito.json')
@@ -38,16 +38,14 @@ routerProductos.get('/:id', async(req, res) => {
 })
 
 //POST
-//ACA AGREGAR EL MIDDLEWARE VALIDATEADMIN
-routerProductos.post('/', async(req, res) => {
+routerProductos.post('/', validateAdmin, async(req, res) => {
     const { body } = req;
     await conten.saveProduct(body);
     res.status(200).send(body)
 })
 
 //DELETE
-//ACA AGREGAR EL MIDDLEWARE VALIDATEADMIN
-routerProductos.delete('/:id', async(req, res) => {
+routerProductos.delete('/:id', validateAdmin, async(req, res) => {
     const { id } = req.params;
     const borrado = await conten.deleteById(id);
     if (borrado) {
@@ -58,7 +56,7 @@ routerProductos.delete('/:id', async(req, res) => {
 });
 
 //PUT
-routerProductos.put('/:id', async(req, res) => {
+routerProductos.put('/:id', validateAdmin, async(req, res) => {
     const { body, params: { id } } = req;
     const anterior = await conten.getById(id);
     const nuevo = await conten.updateById(id, body);
