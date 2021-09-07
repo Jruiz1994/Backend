@@ -1,0 +1,20 @@
+[{
+        "id": 1,
+        "timestamp": 1631024343594,
+        "productos": [{
+            "title": "Smirnoff",
+            "description": "This Vodka Smirnoff 1L",
+            "code": "Este",
+            "price": "4690000",
+            "stock": 2000,
+            "thumbnail": "https://geant.vteximg.com.br/arquivos/ids/274215-700-700/543000.jpg?v=637582597395600000",
+            "id": 6,
+            "timestamp": 1631022551551
+        }]
+    },
+    {
+        "id": 2,
+        "timestamp": 1631024346630,
+        "productos": []
+    }
+]
