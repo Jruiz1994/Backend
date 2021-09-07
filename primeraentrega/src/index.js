@@ -109,17 +109,15 @@ routerCarrito.get('/:idCart/productos', async(req, res) => {
     }
 })
 
-//DELETE PRODUCTOS
+//DELETE PRODUCTOS OK
 routerCarrito.delete('/:idCart/productos/:id_prod', async(req, res) => {
     const { idCart } = req.params;
     const { id_prod } = req.params;
     const borrado = await carrito.deleteProductFromCartById(idCart, id_prod);
     if (borrado) {
-        res.send({ borrado });
-    } else {
-        res.send('El producto que se intenta borrar no existe')
+        res.send(`Producto con id ${id_prod} eliminado del carrito con id ${idCart}`);
     }
-});
+})
 
 const port = 8080;
 app.listen(port, () => { console.log(`Server escuchando en: 8080`) })

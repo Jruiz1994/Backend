@@ -116,17 +116,22 @@ class Contenedor {
         }
     }
 
-    deleteProductFromCartById = async(idCart, idProd) => {
+    deleteProductFromCartById = async(idCart, id_prod) => {
         try {
             const lista = await this.getAll();
-            const producto = await this.getById(id);
-            if (producto) {
-                const nuevaLista = lista.filter(product => product.id != id);
-                const nuevaListaJson = JSON.stringify(nuevaLista); // Convertir de formato Objeto a String
+            const index = lista.findIndex(cart => cart.id == idCart);
+            const carrito = await this.getById(idCart)
+            const borrado = {};
+            if (carrito) {
+                for (let i = 0; i < carrito.productos.length; i++) {
+                    if (carrito.productos[i].id == id_prod) {
+                        carrito.productos.splice(i, 1)
+                    }
+                }
+                lista[index] = carrito;
+                const nuevaListaJson = JSON.stringify(lista);
                 await this.saveList(nuevaListaJson);
-                return producto
-            } else {
-                return null
+                return borrado
             }
         } catch (error) {
             console.log({ error: 'producto no encontrado' });
