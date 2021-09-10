@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 6</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- SOCKET.IO CLIENT -->
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <div class="titulo">
+        <h1>DESAFIO 8 - Sockets con Knex</h1>
+    </div>
+    <!-- TABLA DE PRODUCTOS: -->
+    <div class="listadoProds">
+        <table class="table table-striped">
+            <h2>Lista de productos</h2>
+            <thead>
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Foto</th>
+                </tr>
+            </thead>
+            <tbody id="productsTable"></tbody>
+        </table>
+    </div>
+    <!-- CREAR PRODUCTO -->
+    <div class='mb-3 formProducto'>
+        <h2>Alta de producto:</h2>
+        <form id="formulario">
+            <div class="mb-3">
+                <label for="title" class="form-label p">Titulo:</label>
+                <input type="text" class="form-control" name="title" id="title">
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label p">Descripcion:</label>
+                <input type="text" class="form-control" name="description" id="description">
+            </div>
+            <div class="mb-3">
+                <label for="code" class="form-label p">Codigo:</label>
+                <input type="text" class="form-control" name="code" id="code">
+            </div>
+            <div class="mb-3">
+                <label for="price" class="form-label p">Precio:</label>
+                <input type="number" class="form-control" name="price" id="price">
+            </div>
+            <div class="mb-3">
+                <label for="stock" class="form-label p">Stock:</label>
+                <input type="number" class="form-control" name="stock" id="stock">
+            </div>
+            <div class="mb-3">
+                <label for="thumbnail" class="form-label p">URL de imagen:</label>
+                <input type="text" class="form-control" name="thumbnail" id="thumbnail">
+            </div>
+            <button id="productSend" class="btn btn-secondary" type="submit">ENVIAR</button>
+        </form>
+    </div>
+
+    <!-- MENSAJES -->
+    <div id="chat" class="chat">
+        <h2>Chat</h2>
+        <div class="mb-3 userInfo">
+            <label class="form-label p" for="user">Usuario:</label>
+            <input class="form-control" type="text" id="user" placeholder="Nombre de usuario...">
+        </div>
+        <form id="messageForm">
+            <div class="mb-3">
+                <label class="form-label p" for="msg">Mensaje:</label>
+                <input class="form-control" id="msg" type="text" placeholder="Escribí un mensaje...">
+            </div>
+            <button id="send" class="btn btn-secondary" type="submit">ENVIAR</button>
+        </form>
+        <hr>
+        <div id="mensajes"></div>
+    </div>
+    <script src="js/sockets.js"></script>
+
+</body>

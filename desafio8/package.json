@@ -1,24 +1,25 @@
 {
-    "name": "primeraentrega",
+    "name": "Desafio6",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "server.js",
     "type": "module",
     "scripts": {
-        "start": "nodemon --inspect ./src/server.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "server": "nodemon --inspect ./src/server"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
+    "devDependencies": {
+        "eslint": "^7.32.0",
+        "nodemon": "^2.0.12"
+    },
     "dependencies": {
         "dotenv": "^10.0.0",
         "express": "^4.17.1",
         "knex": "^0.95.11",
-        "mysql2": "^2.3.0"
-    },
-    "devDependencies": {
-        "eslint": "^7.32.0",
-        "nodemon": "^2.0.12"
+        "mysql2": "^2.3.0",
+        "socket.io": "^4.2.0"
     }
 }
