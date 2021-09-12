@@ -26,6 +26,7 @@ io.on('connection', async socket => {
     socket.on('nuevoProducto', async producto => {
         await contenedorProductos.saveProduct(producto);
         // Re-emitir la lista de productos al cliente junto con el nuevo producto.
+        const products = await contenedorProductos.getAll();
         io.emit('productos', products);
     })
 
@@ -43,6 +44,7 @@ io.on('connection', async socket => {
         // para guardar los mensajes:
         await contenedorMensajes.saveMessage(msg);
         // Re-emitir mensajes al cliente:
+        const messages = await contenedorMensajes.getAllMessages();
         io.emit('mensajes', messages);
     })
 });
