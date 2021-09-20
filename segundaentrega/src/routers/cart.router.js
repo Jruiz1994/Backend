@@ -1,7 +1,7 @@
 import express from 'express'
 import { cartsControllers } from '../controllers/index.js'
 
-const cartRouter = express.Router()
+const cartRouter = new express.Router()
 
 //GET ALL
 cartRouter.get('/:idCart/productos', cartsControllers.getById)
@@ -11,4 +11,4 @@ cartRouter.get('/:idCart/productos', cartsControllers.getById)
     .delete('/:idCart/productos/:id_prod', cartsControllers.deleteProductFromCartById)
 
 
-export { cartRouter }
+export default { cartRouter }
