@@ -12,4 +12,4 @@ productsRouter.get('/', productsControllers.getAll)
     .put('/:id', validateAdmin.validateAdmin, productsControllers.updateProduct)
 
 
-export default { productsRouter }
+export default productsRouter

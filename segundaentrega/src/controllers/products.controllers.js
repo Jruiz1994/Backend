@@ -1,9 +1,11 @@
-import { productsService } from '../services/index.js'
+import productsService from '../services/products.service.js'
+import { productsModel } from '../models/products.model.js';
+const productService = new productsService(productsModel);
 
 //GET ALL
 export async function getAll(req, res) {
     try {
-        const data = await productsService.getAll();
+        const data = await productService.getAllProds();
         res.status(200).send(data)
     } catch (error) {
         console.log(error);
@@ -13,7 +15,7 @@ export async function getAll(req, res) {
 //GET BY ID 
 export async function getById(req, res) {
     const { id } = req.params;
-    const data = await productsService.getById(id);
+    const data = await productService.getProdById(id);
     if (data) {
         res.status(200).send(data)
     } else {
@@ -24,16 +26,16 @@ export async function getById(req, res) {
 //POST
 export async function saveProduct(req, res) {
     const { body } = req;
-    await productsService.saveProduct(body);
+    await productService.create(body);
     res.status(200).send(body)
 }
 
 //DELETE
 export async function deleteProduct(req, res) {
     const { id } = req.params;
-    const borrado = await productsService.deleteById(id);
+    const borrado = await productService.deleteProdById(id);
     if (borrado) {
-        res.send({ borrado });
+        res.status(200).send(`El producto con id ${id} fue eliminado`);
     } else {
         res.send('El producto que se intenta borrar no existe')
     }
@@ -42,8 +44,8 @@ export async function deleteProduct(req, res) {
 //PUT
 export async function updateProduct(req, res) {
     const { body, params: { id } } = req;
-    const anterior = await productsService.getById(id);
-    const nuevo = await productsService.updateById(id, body);
+    const anterior = await productService.getById(id);
+    const nuevo = await productService.updateById(id, body);
     if (anterior) {
         res.send({ anterior, nuevo });
     } else {

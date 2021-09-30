@@ -1,12 +1,13 @@
 import mongoose from "mongoose";
+// import { productsSchema } from './products.model.js'
 
 const cartsSchema = new mongoose.Schema({
     productos: [{
-        ref: 'Products',
-        type: mongoose.Schema.Types.ObjectId,
+        type: mongoose.Types.ObjectId,
+        ref: 'Products'
     }]
 }, {
     timestamps: true
 })
 
-export default mongoose.model('Carts', cartsSchema)
+export const cartsModel = mongoose.model('Carts', cartsSchema)

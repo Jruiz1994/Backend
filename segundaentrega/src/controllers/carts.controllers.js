@@ -1,15 +1,27 @@
-import { cartsService, productsService } from '../services/index.js'
+import cartsService from '../services/carts.service.js'
+import { cartsModel } from '../models/carts.model.js';
+const cartService = new cartsService(cartsModel);
+
+//GET ALL CARRITOS
+export async function getAll(req, res) {
+    try {
+        const data = await cartService.getAllCarts();
+        res.status(200).send(data)
+    } catch (error) {
+        console.log(error);
+    }
+}
 
 //POST CARRITO OK
 export async function saveCart(req, res) {
-    const idCarrito = await cartsService.saveCart();
+    const idCarrito = await cartService.saveCart();
     res.status(200).send("Carrito creado con id " + idCarrito)
 }
 
 //DELETE CARRITO OK
 export async function deleteById(req, res) {
     const { id } = req.params;
-    const borrado = await cartsService.deleteById(id);
+    const borrado = await cartService.deleteCartById(id);
     if (borrado) {
         res.send({ borrado });
     } else {
@@ -21,8 +33,7 @@ export async function deleteById(req, res) {
 export async function saveProductIntoCart(req, res) {
     const { idCart } = req.params;
     const { idProd } = req.params;
-    const prodAAgregar = await productsService.getById(idProd);
-    await cartsService.saveProductIntoCart(idCart, prodAAgregar);
+    await cartService.saveProductIntoCart(idCart, idProd);
     res.status(200).send("Producto agregado al carrito")
 }
 
@@ -30,7 +41,7 @@ export async function saveProductIntoCart(req, res) {
 export async function getById(req, res) {
     const { idCart } = req.params;
     try {
-        const data = await cartsService.getById(idCart);
+        const data = await cartService.getProductsByCartId(idCart);
         res.status(200).send(data)
     } catch (error) {
         console.log(error);
@@ -41,7 +52,7 @@ export async function getById(req, res) {
 export async function deleteProductFromCartById(req, res) {
     const { idCart } = req.params;
     const { id_prod } = req.params;
-    const borrado = await cartsService.deleteProductFromCartById(idCart, id_prod);
+    const borrado = await cartService.deleteProductFromCartById(idCart, id_prod);
     if (borrado) {
         res.send(`Producto con id ${id_prod} eliminado del carrito con id ${idCart}`);
     }

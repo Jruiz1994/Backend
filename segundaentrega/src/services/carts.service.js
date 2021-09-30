@@ -1,50 +1,67 @@
-import { cartsModel } from '../models/index.js'
+import Services from './services.js'
+// import ProductServices from './products.service.js'
 
-export async function saveCart() {
-    try {
-        const response = await cartsModel.create()
-        return response
-    } catch (error) {
-        throw new Error(error)
-    }
-}
+class CartsService extends Services {
+    constructor(model) { super(model) }
 
-export async function getById(idCart) {
-    try {
-        const respuesta = await cartsModel.find({ _id: idCart })
-        console.log(respuesta);
+    async getAllCarts() {
+        const respuesta = await this.getAll()
         return respuesta
-    } catch (error) {
-        console.log(error);
     }
-}
 
-export async function deleteById(idCart) {
-    try {
-        const respuesta = await cartsModel.deleteOne({ _id: idCart })
-        console.log(respuesta);
+    async deleteCartById(id) {
+        const respuesta = await this.deleteById(id)
         return respuesta
-    } catch (error) {
-        console.log(error);
     }
-}
 
-export async function deleteProductFromCartById(idCart, id_prod) {
-    try {
-        const respuesta = await cartsModel.deleteOne({ _id: idCart, 'products._id': id_prod })
-        console.log(respuesta);
-        return respuesta
-    } catch (error) {
-        console.log(error);
+    async saveCart() {
+        try {
+            const respuesta = await this.saveItem({ productos: [] })
+            console.log(respuesta)
+            return respuesta._id
+        } catch (error) {
+            throw new Error(error)
+        }
     }
-}
 
-export async function saveProductIntoCart(idCart, prodAAgregar) {
-    try {
-        const respuesta = await cartsModel.create({ _id: idCart, 'products': prodAAgregar })
-        console.log(respuesta);
-        return respuesta
-    } catch (error) {
-        console.log(error);
+    async getProductsByCartId(idCart) {
+        try {
+            const cart = await this.model.findById(idCart);
+            const productos = await cart.populate('productos');
+            return productos
+        } catch (error) { console.log(error) }
+    }
+
+
+    async deleteProductFromCartById(idCart, id_prod) {
+        try {
+            const carrito = await this.model.findById(idCart)
+            if (carrito) {
+                for (let i = 0; i < carrito.productos.length; i++) {
+                    if (carrito.productos[i]._id == id_prod) {
+                        carrito.productos.splice(i, 1)
+                        await carrito.save()
+                        console.log(carrito);
+                        break
+                    }
+                }
+            }
+            return carrito
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    async saveProductIntoCart(idCart, idProdAAgregar) {
+        try {
+            const cart = await this.model.findById(idCart)
+            cart.productos.push(idProdAAgregar)
+            await cart.save()
+            console.log(cart);
+            return cart
+        } catch (error) {
+            console.log(error);
+        }
     }
 }
+export default CartsService;

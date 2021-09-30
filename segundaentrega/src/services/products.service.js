@@ -1,55 +1,34 @@
-import { productsModel } from '../models/index.js'
+import Services from './services.js'
 
-export async function getAll() {
-    try {
-        const respuesta = await productsModel.find()
-        console.log(respuesta);
+class ProductServices extends Services {
+    constructor(model) { super(model) }
+
+    async getAllProds() {
+        const respuesta = await this.getAll()
         return respuesta
-    } catch (error) {
-        console.log(error);
+    }
+
+    async getProdById(idProd) {
+        const respuesta = await this.getById(idProd)
+        return respuesta
+    }
+
+    async deleteProdById(id) {
+        const respuesta = await this.deleteById(id);
+        return respuesta
+    }
+
+    async create(body) { await this.saveItem(body) }
+
+    async updateById(id, body) {
+        try {
+            const respuesta = await this.model.updateOne({ _id: id }, {...body })
+            console.log(respuesta);
+            return respuesta
+        } catch (error) {
+            console.log(error);
+        }
     }
 }
 
-export async function getById(idProd) {
-    try {
-        const respuesta = await productsModel.findOne({ _id: idProd })
-        console.log(respuesta);
-        return respuesta
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-export async function saveProduct(body) {
-    try {
-        const respuesta = await productsModel.create(body)
-        console.log(respuesta);
-        return respuesta
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-export async function deleteById(id) {
-    try {
-        const respuesta = await productsModel.deleteOne({ _id: id })
-        console.log(respuesta);
-
-        return respuesta
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-export async function updateById(id, body) {
-    try {
-        const respuesta = await productsModel.updateOne({
-            _id: id,
-            ...body
-        })
-        console.log(respuesta);
-        return respuesta
-    } catch (error) {
-        console.log(error);
-    }
-}
+export default ProductServices;
