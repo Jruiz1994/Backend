@@ -1,15 +1,16 @@
 import express from 'express';
 const app = express();
+import * as Middlewares from './middlewares/auth.middleware.js';
+import { cacheControl } from './middlewares/auth.middleware.js';
+app.use(cacheControl)
+import { fakerProds } from './utils/faker.js'
 import dotenv from 'dotenv'
 import MongoStore from 'connect-mongo'
 import session from 'express-session';
 import handlebars from 'express-handlebars'
 const port = 8080;
-import faker from 'faker'
-faker.locale = 'es'
 dotenv.config()
-import passport from 'passport'
-import { Strategy } from 'passport-facebook'
+import passport from './utils/passport.utils.js';
 import ContenedorNew from './contenedorNew.js';
 const contMsjs = new ContenedorNew();
 const options = { userNewUrlParser: true, useUnifiedTopology: true }
@@ -22,33 +23,15 @@ app.use(session({
     saveUninitialized: true,
     secret: process.env.SECRET,
     cookie: {
-        maxAge: 600000
+        maxAge: 10000
     },
     rolling: true
 }))
 app.listen(port, () => console.log(`Servidor activo en http://localhost:${port}`));
-app.use(passport.initialize())
-app.use(passport.session())
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-passport.use(new Strategy({
-    clientID: process.env.FACEBOOK_ID,
-    clientSecret: process.env.FACEBOOK_SECRET,
-    callbackURL: '/auth/facebook/callback',
-    profileFields: ['id', 'email', 'displayName', 'photos'],
-    scope: ['email']
-}, (accessToken, refreshToken, userProfile, done) => {
-    return done(null, userProfile)
-}))
-
-passport.serializeUser((user, done) => {
-    done(null, user)
-})
-passport.deserializeUser((id, done) => {
-    done(null, id)
-})
-
+app.use(passport.initialize())
+app.use(passport.session())
 
 import path from 'path';
 const __dirname = path.resolve();
@@ -77,52 +60,40 @@ app.get('/auth/facebook', passport.authenticate('facebook'))
 
 app.get('/auth/facebook/callback', passport.authenticate('facebook', {
     successRedirect: '/productos',
-    failureRedirect: '/logout'
+    failureRedirect: '/login'
 }))
 
 app.get('/logout', (req, res) => {
-    const user = req.user.displayName;
-    req.logout()
-    res.render('logout', {
-        layout: 'marcoDeslogueado',
-        user
-    })
-})
-
-app.get('/productos', (req, res) => {
     if (req.isAuthenticated()) {
-        const productos = [];
-        for (let i = 0; i < 5; i++) {
-            const prod = {}
-            prod.id = i + 1
-            prod.title = faker.commerce.productName()
-            prod.price = faker.commerce.price()
-            prod.thumbnail = faker.image.image()
-            productos.push(prod)
-        }
-        res.render('bodyProducts', {
-            layout: 'marcoLogueado',
-            productos,
-            nombre: req.user.displayName,
-            foto: req.user.photos[0].value,
-            email: req.user.emails[0].value
-        });
+        const user = req.user.displayName;
+        req.logout()
+        res.render('logout', {
+            layout: 'marcoDeslogueado',
+            user
+        })
     } else {
         res.redirect('/login')
     }
 })
 
-app.get('/mensajes', async(req, res) => {
-    if (req.isAuthenticated()) {
-        const mensajes = await contMsjs.getAllMessages()
-        res.render('mensajes', {
-            layout: 'marcoLogueado',
-            mensajes,
-            nombre: req.user.displayName,
-            foto: req.user.photos[0].value,
-            email: req.user.emails[0].value
-        });
-    } else {
-        res.redirect('/login')
-    }
+app.get('/productos', Middlewares.authMiddleware, (req, res) => {
+    const productos = fakerProds(5);
+    res.render('bodyProducts', {
+        layout: 'marcoLogueado',
+        productos,
+        nombre: req.user.displayName,
+        foto: req.user.photos[0].value,
+        email: req.user.emails[0].value
+    });
+})
+
+app.get('/mensajes', Middlewares.authMiddleware, async(req, res) => {
+    const mensajes = await contMsjs.getAllMessages()
+    res.render('mensajes', {
+        layout: 'marcoLogueado',
+        mensajes,
+        nombre: req.user.displayName,
+        foto: req.user.photos[0].value,
+        email: req.user.emails[0].value
+    });
 })
