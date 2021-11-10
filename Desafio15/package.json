@@ -1,0 +1,33 @@
+{
+    "name": "desafio15",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node ./src/server.js",
+        "dev:fork": "nodemon ./src/server.js --port 8080",
+        "dev:cluster": "nodemon ./src/server.js --port 8081 --modo cluster",
+        "nodeCluster": "pm2 start ./src/server.js --name node-cluster --watch -- --modo cluster --port 8081",
+        "startPm2fork": "pm2 start ./src/server.js --name forkPm2 --watch -- --port 8081",
+        "startPm2cluster": "pm2 start ./src/server.js --name clusterPm2 --watch -i max -- --port 8081"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^8.0.1"
+    },
+    "dependencies": {
+        "connect-mongodb-session": "^3.1.1",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "express-handlebars": "^5.3.4",
+        "express-session": "^1.17.2",
+        "faker": "^5.5.3",
+        "minimist": "^1.2.5",
+        "passport": "^0.5.0",
+        "passport-facebook": "^3.0.0"
+    }
+}

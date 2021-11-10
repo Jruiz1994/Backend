@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Login por formulario</title>
+  <meta name="description" content="Listado de productos">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body style="background-color: #EBEEF2;">
+    <div>
+<nav class="nav nav-pills flex-column flex-sm-row" style="padding: 50px; background-color: #C0C2C5">
+  <h1 class="flex-sm-fill text-sm-center" style="font-size: large;">Bienvenid@ {{nombre}}!</h1>
+  <img class="flex-sm text-sm-center" src="{{foto}}" style="width:100">
+  <h2 class="flex-sm-fill text-sm-center" style="font-size: large;">Email: {{email}}</h2>
+</nav>
+
+        <div style="margin: 50px; text-align: center"> 
+            <a style="margin-left: 50px;" href="/products"><button type="button" class="btn btn-secondary">Actualizar</button></a>
+            <a style="margin-left: 50px;" href="/api/randoms" target="blank"><button type="button" class="btn btn-danger">Randoms</button></a>
+            <a style="margin-left: 50px;" href="/api/info"><button type="button" class="btn btn-info">Info</button></a>
+            <a style="margin-left: 50px;" href="/logout"><button type="button" class="btn btn-primary">Cerrar sesion</button></a>
+        </div>
+        <div>
+            {{{ body }}}
+        </div>
+    </div>
+</body>
+</html>
