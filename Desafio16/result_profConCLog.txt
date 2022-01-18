@@ -1,0 +1,1120 @@
+Statistical profiling result from conCLog.log, (17495 ticks, 18 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+  14182   81.1%          /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+    216    1.2%          /usr/lib/x86_64-linux-gnu/libc-2.31.so
+    209    1.2%          [vdso]
+     11    0.1%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     76    0.4%    2.6%  LazyCompile: *wrap /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:101:22
+     52    0.3%    1.8%  LazyCompile: *parse /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+     40    0.2%    1.4%  LazyCompile: *next /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+     34    0.2%    1.2%  LazyCompile: *SourceNode_walk /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/source-map/lib/source-node.js:221:53
+     20    0.1%    0.7%  LazyCompile: *serializeInto /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/bson/lib/parser/serializer.js:550:23
+     17    0.1%    0.6%  LazyCompile: *resolve node:path:1091:10
+     17    0.1%    0.6%  LazyCompile: *anonymous /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:12:42
+     16    0.1%    0.6%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+     16    0.1%    0.6%  LazyCompile: *compile /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     15    0.1%    0.5%  LazyCompile: *next /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/index.js:176:16
+     14    0.1%    0.5%  LazyCompile: *resolvePath /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:492:36
+     14    0.1%    0.5%  LazyCompile: *deserializeObject /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/bson/lib/parser/deserializer.js:54:27
+     12    0.1%    0.4%  LazyCompile: *nextTick node:internal/process/task_queues:104:18
+     12    0.1%    0.4%  LazyCompile: *emit node:events:340:44
+     11    0.1%    0.4%  LazyCompile: *extend /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/utils.js:28:16
+     11    0.1%    0.4%  LazyCompile: *<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/source-map/lib/source-node.js:174:29
+     10    0.1%    0.3%  LazyCompile: *writeOrBuffer node:internal/streams/writable:366:23
+     10    0.1%    0.3%  LazyCompile: *normalizeString node:path:66:25
+      9    0.1%    0.3%  RegExp: ^(?:[^\x00]*?(?=(\{\{)))
+      8    0.0%    0.3%  LazyCompile: *template /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/runtime.js:52:18
+      8    0.0%    0.3%  LazyCompile: *renderView /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:183:19
+      8    0.0%    0.3%  LazyCompile: *render /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      8    0.0%    0.3%  LazyCompile: *onwrite node:internal/streams/writable:426:17
+      8    0.0%    0.3%  LazyCompile: *getEncodingOps node:buffer:678:24
+      7    0.0%    0.2%  RegExp: (?:\r\n?|\n).*
+      7    0.0%    0.2%  LazyCompile: *replaceStack /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:892:38
+      7    0.0%    0.2%  LazyCompile: *SourceNode_add /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/source-map/lib/source-node.js:172:51
+      6    0.0%    0.2%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      6    0.0%    0.2%  LazyCompile: *relative node:path:1190:11
+      5    0.0%    0.2%  RegExp: ^(?:([^\s!"#%-,\.\/;->@\[-\^`\{-~]+(?=([=~}\s\/.)|]))))
+      5    0.0%    0.2%  LazyCompile: *realpathSync node:fs:2408:22
+      5    0.0%    0.2%  LazyCompile: *readableAddChunk /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/readable-stream/lib/_stream_readable.js:249:26
+      5    0.0%    0.2%  LazyCompile: *accept /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:101:26
+      5    0.0%    0.2%  LazyCompile: *SubExpression /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:236:40
+      5    0.0%    0.2%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:629:37
+      4    0.0%    0.1%  LazyCompile: *resolveOptions /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:824:24
+      4    0.0%    0.1%  LazyCompile: *readableAddChunk node:internal/streams/readable:242:26
+      4    0.0%    0.1%  LazyCompile: *processWaitQueue /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:417:26
+      4    0.0%    0.1%  LazyCompile: *opcode /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:347:26
+      4    0.0%    0.1%  LazyCompile: *ondata node:internal/streams/readable:775:18
+      4    0.0%    0.1%  LazyCompile: *getPartials /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:52:20
+      4    0.0%    0.1%  LazyCompile: *extname node:path:1385:10
+      4    0.0%    0.1%  LazyCompile: *Writable.write node:internal/streams/writable:334:36
+      4    0.0%    0.1%  LazyCompile: *PathExpression /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:289:42
+      4    0.0%    0.1%  Function: ^readableAddChunk /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/readable-stream/lib/_stream_readable.js:249:26
+      4    0.0%    0.1%  Function: ^next /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/send/index.js:732:17
+      4    0.0%    0.1%  Function: ^messageHandler /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:421:35
+      4    0.0%    0.1%  Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:85:24
+      3    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\^\s*(~)?\}\})
+      3    0.0%    0.1%  RegExp: ^(?:\{\{(~)?&)
+      3    0.0%    0.1%  RegExp: ^(?:\{\{(~)?#\*?)
+      3    0.0%    0.1%  RegExp: ^(?:\.(?=([=~}\s\/.)|])))
+      3    0.0%    0.1%  RegExp: (^|\r?\n)\s*?$
+      3    0.0%    0.1%  RegExp: (?:^|,)\s*?no-transform\s*?(?:,|$)
+      3    0.0%    0.1%  LazyCompile: *write node:buffer:1050:40
+      3    0.0%    0.1%  LazyCompile: *validateString node:internal/validators:118:24
+      3    0.0%    0.1%  LazyCompile: *serializeBinary /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/bson/lib/parser/serializer.js:459:25
+      3    0.0%    0.1%  LazyCompile: *resolvePossibleLambda /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:527:56
+      3    0.0%    0.1%  LazyCompile: *quotedString /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+      3    0.0%    0.1%  LazyCompile: *pushSource /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      3    0.0%    0.1%  LazyCompile: *processIncomingData /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      3    0.0%    0.1%  LazyCompile: *preparePath /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:63:21
+      3    0.0%    0.1%  LazyCompile: *parse /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/minimatch/minimatch.js:271:16
+      3    0.0%    0.1%  LazyCompile: *insert node:internal/timers:350:16
+      3    0.0%    0.1%  LazyCompile: *hasTimedOut /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:535:16
+      3    0.0%    0.1%  LazyCompile: *handle /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/index.js:136:31
+      3    0.0%    0.1%  LazyCompile: *getTemplate /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:108:20
+      3    0.0%    0.1%  LazyCompile: *createNewLookupObject /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/internal/create-new-lookup-object.js:15:31
+      3    0.0%    0.1%  LazyCompile: *appendToBuffer /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:42:42
+      3    0.0%    0.1%  LazyCompile: *_unrefTimer node:net:417:52
+      3    0.0%    0.1%  LazyCompile: *_getDir /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:266:16
+      3    0.0%    0.1%  LazyCompile: *Readable.read /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/readable-stream/lib/_stream_readable.js:392:36
+      3    0.0%    0.1%  Function: ^write /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:488:15
+      3    0.0%    0.1%  Function: ^session /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/index.js:179:26
+      3    0.0%    0.1%  Function: ^removeListener node:events:557:28
+      3    0.0%    0.1%  Function: ^processWaitQueue /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:417:26
+      3    0.0%    0.1%  Function: ^get node:internal/bootstrap/pre_execution:326:8
+      3    0.0%    0.1%  Function: ^executeWithServerSelection /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/operations/execute_operation.js:65:36
+      3    0.0%    0.1%  Function: ^emit node:events:340:44
+      3    0.0%    0.1%  Function: ^afterWriteDispatched node:internal/stream_base_commons:159:30
+      3    0.0%    0.1%  Function: ^afterWrite node:internal/streams/writable:488:20
+      3    0.0%    0.1%  Function: ^_copy node:buffer:200:15
+      3    0.0%    0.1%  Function: ^WritableState.onwrite /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/readable-stream/lib/_stream_writable.js:159:27
+      3    0.0%    0.1%  Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/index.js:485:38
+      2    0.0%    0.1%  RegExp: ^\[.*\]$
+      2    0.0%    0.1%  RegExp: ^\.|\.$
+      2    0.0%    0.1%  RegExp: ^[a-zA-Z_][a-zA-Z_0-9]*$
+      2    0.0%    0.1%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+      2    0.0%    0.1%  RegExp: ^(?:null(?=([~}\s)])))
+      2    0.0%    0.1%  RegExp: ^(?:as\s+\|)
+      2    0.0%    0.1%  RegExp: ^(?:\{\{\{\{)
+      2    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\/)
+      2    0.0%    0.1%  RegExp: ^(?:@)
+      2    0.0%    0.1%  RegExp: ^(?:=)
+      2    0.0%    0.1%  LazyCompile: *write node:buffer:592:12
+      2    0.0%    0.1%  LazyCompile: *toInteger node:buffer:190:19
+      2    0.0%    0.1%  LazyCompile: *serializeNumber /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/bson/lib/parser/serializer.js:43:25
+      2    0.0%    0.1%  LazyCompile: *send /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/response.js:107:25
+      2    0.0%    0.1%  LazyCompile: *resolveBSONOptions /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/bson.js:52:28
+      2    0.0%    0.1%  LazyCompile: *push /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:79:22
+      2    0.0%    0.1%  LazyCompile: *popStack /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:960:30
+      2    0.0%    0.1%  LazyCompile: *module.exports /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/utils-merge/index.js:16:36
+      2    0.0%    0.1%  LazyCompile: *maybeReadMore_ node:internal/streams/readable:632:24
+      2    0.0%    0.1%  LazyCompile: *maybePromise /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:482:22
+      2    0.0%    0.1%  LazyCompile: *logger node:internal/util/debuglog:96:18
+      2    0.0%    0.1%  LazyCompile: *latencyWindowReducer /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/server_selection.js:123:30
+      2    0.0%    0.1%  LazyCompile: *join node:path:1166:7
+      2    0.0%    0.1%  LazyCompile: *internalNameLookup /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:66:50
+      2    0.0%    0.1%  LazyCompile: *id /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:44:12
+      2    0.0%    0.1%  LazyCompile: *hasAspect /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/operations/operation.js:37:14
+      2    0.0%    0.1%  LazyCompile: *get node:internal/streams/duplex:100:8
+      2    0.0%    0.1%  LazyCompile: *get node:internal/bootstrap/pre_execution:314:8
+      2    0.0%    0.1%  LazyCompile: *get description /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/topology.js:172:20
+      2    0.0%    0.1%  LazyCompile: *generateList /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:143:38
+      2    0.0%    0.1%  LazyCompile: *fromStringFast node:buffer:412:24
+      2    0.0%    0.1%  LazyCompile: *fastparse /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/parseurl/index.js:95:20
+      2    0.0%    0.1%  LazyCompile: *dirname node:path:1275:10
+      2    0.0%    0.1%  LazyCompile: *command /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:161:12
+      2    0.0%    0.1%  LazyCompile: *clearIncoming node:_http_server:747:23
+      2    0.0%    0.1%  LazyCompile: *castChunk /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:52:19
+      2    0.0%    0.1%  LazyCompile: *basename node:path:1306:11
+      2    0.0%    0.1%  LazyCompile: *anonymous /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:549:49
+      2    0.0%    0.1%  LazyCompile: *adjustOffset node:buffer:1098:22
+      2    0.0%    0.1%  LazyCompile: *Writable.write /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/readable-stream/lib/_stream_writable.js:288:37
+      2    0.0%    0.1%  LazyCompile: *WhitespaceControl.Program /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/whitespace-control.js:19:48
+      2    0.0%    0.1%  LazyCompile: *Transform._read /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/readable-stream/lib/_stream_transform.js:171:38
+      2    0.0%    0.1%  LazyCompile: *Readable.read node:internal/streams/readable:402:35
+      2    0.0%    0.1%  LazyCompile: *FastBuffer node:internal/buffer:958:14
+      2    0.0%    0.1%  Function: ^writevGeneric node:internal/stream_base_commons:126:23
+      2    0.0%    0.1%  Function: ^writeHead /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/on-headers/index.js:28:29
+      2    0.0%    0.1%  Function: ^tryReadSync node:fs:429:21
+      2    0.0%    0.1%  Function: ^stringToFlags node:internal/fs/utils:555:23
+      2    0.0%    0.1%  Function: ^socketOnDrain node:_http_server:556:23
+      2    0.0%    0.1%  Function: ^size /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/denque/index.js:94:38
+      2    0.0%    0.1%  Function: ^setHeader node:_http_outgoing:574:57
+      2    0.0%    0.1%  Function: ^serializeInto /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/bson/lib/parser/serializer.js:550:23
+      2    0.0%    0.1%  Function: ^selectServer /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/topology.js:281:17
+      2    0.0%    0.1%  Function: ^resOnFinish node:_http_server:786:21
+      2    0.0%    0.1%  Function: ^render /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/application.js:531:29
+      2    0.0%    0.1%  Function: ^readableAddChunk node:internal/streams/readable:242:26
+      2    0.0%    0.1%  Function: ^readPreferenceServerSelector /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/server_selection.js:153:38
+      2    0.0%    0.1%  Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      2    0.0%    0.1%  Function: ^processPromiseRejections node:internal/process/promises:203:34
+      2    0.0%    0.1%  Function: ^prepareProgram /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:185:24
+      2    0.0%    0.1%  Function: ^parse /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/commands.js:577:10
+      2    0.0%    0.1%  Function: ^openSync node:fs:576:18
+      2    0.0%    0.1%  Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      2    0.0%    0.1%  Function: ^makeFindCommand /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/operations/find.js:73:25
+      2    0.0%    0.1%  Function: ^makeAbs /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/glob/common.js:199:18
+      2    0.0%    0.1%  Function: ^listenerCount node:events:722:23
+      2    0.0%    0.1%  Function: ^lex /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:525:30
+      2    0.0%    0.1%  Function: ^hasTimedOut /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:535:16
+      2    0.0%    0.1%  Function: ^handle /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/application.js:158:29
+      2    0.0%    0.1%  Function: ^getcookie /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/index.js:529:19
+      2    0.0%    0.1%  Function: ^get node:_http_incoming:108:16
+      2    0.0%    0.1%  Function: ^get length /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:939:15
+      2    0.0%    0.1%  Function: ^etag /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/etag/index.js:70:15
+      2    0.0%    0.1%  Function: ^error /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/send/index.js:267:45
+      2    0.0%    0.1%  Function: ^emitAfterScript node:internal/async_hooks:509:25
+      2    0.0%    0.1%  Function: ^dispatch /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/route.js:98:45
+      2    0.0%    0.1%  Function: ^deserialize /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/bson/lib/parser/deserializer.js:25:21
+      2    0.0%    0.1%  Function: ^command /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:161:12
+      2    0.0%    0.1%  Function: ^basename node:path:1306:11
+      2    0.0%    0.1%  Function: ^append /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:943:11
+      2    0.0%    0.1%  Function: ^acquire /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:577:12
+      2    0.0%    0.1%  Function: ^_write node:internal/streams/writable:284:16
+      2    0.0%    0.1%  Function: ^_addListener node:events:418:22
+      2    0.0%    0.1%  Function: ^SessionStrategy.authenticate /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/passport/lib/strategies/session.js:45:50
+      2    0.0%    0.1%  Function: ^MustacheStatement /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:215:48
+      2    0.0%    0.1%  Function: ^Minimatch /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/minimatch/minimatch.js:110:20
+      2    0.0%    0.1%  Function: ^Long.compare /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/bson/lib/long.js:291:39
+      2    0.0%    0.1%  Function: ^Hash node:internal/crypto/hash:58:14
+      2    0.0%    0.1%  Function: ^FastBuffer node:internal/buffer:958:14
+      2    0.0%    0.1%  Function: ^ConnectionCheckedOutEvent /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool_events.js:115:16
+      2    0.0%    0.1%  Function: ^AbstractCursor /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cursor/abstract_cursor.js:46:16
+      2    0.0%    0.1%  Function: ^<anonymous> node:internal/fs/utils:686:40
+      2    0.0%    0.1%  Function: ^<anonymous> :1:20
+      2    0.0%    0.1%  Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/operations/execute_operation.js:131:67
+      2    0.0%    0.1%  Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cursor/abstract_cursor.js:442:46
+      2    0.0%    0.1%  Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/runtime.js:360:47
+      1    0.0%    0.0%  RegExp: ^\s*?(\r?\n|$)
+      1    0.0%    0.0%  RegExp: ^\/api\/?(?=\/|$)
+      1    0.0%    0.0%  RegExp: ^\.|this\b
+      1    0.0%    0.0%  RegExp: ^[\u0009\u0020-\u007e\u0080-\u00ff]+$
+      1    0.0%    0.0%  RegExp: ^[!#$%&'*+\-.^_`|~0-9A-Za-z]+$
+      1    0.0%    0.0%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      1    0.0%    0.0%  RegExp: ^.*[\.\/\\]
+      1    0.0%    0.0%  RegExp: ^(?:true(?=([~}\s)])))
+      1    0.0%    0.0%  RegExp: ^(?:\}(~)?\}\})
+      1    0.0%    0.0%  RegExp: ^(?:\|)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\{)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\s*else\s*(~)?\}\})
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?\s*else\b)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?>)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?#>)
+      1    0.0%    0.0%  RegExp: ^(?:\{\{(~)?!--)
+      1    0.0%    0.0%  RegExp: ^(?:\.\.)
+      1    0.0%    0.0%  RegExp: ^(?:\()
+      1    0.0%    0.0%  RegExp: ^(?:[^\x00]+)
+      1    0.0%    0.0%  RegExp: ^(?:"(\\["]|[^"])*")
+      1    0.0%    0.0%  RegExp: \r?\n\s*?$
+      1    0.0%    0.0%  RegExp: [\x00-\x1f\x27\x5c\x7f-\x9f]
+      1    0.0%    0.0%  LazyCompile: *toString node:buffer:782:46
+      1    0.0%    0.0%  LazyCompile: *toString /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:1046:13
+      1    0.0%    0.0%  LazyCompile: *stripFlags /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:52:20
+      1    0.0%    0.0%  LazyCompile: *slowCases node:internal/util:165:19
+      1    0.0%    0.0%  LazyCompile: *slice node:buffer:593:12
+      1    0.0%    0.0%  LazyCompile: *serializeObject /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/bson/lib/parser/serializer.js:258:25
+      1    0.0%    0.0%  LazyCompile: *serializeBoolean /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/bson/lib/parser/serializer.js:94:26
+      1    0.0%    0.0%  LazyCompile: *restore /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/index.js:620:17
+      1    0.0%    0.0%  LazyCompile: *readPackage node:internal/modules/cjs/loader:290:21
+      1    0.0%    0.0%  LazyCompile: *read /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:952:9
+      1    0.0%    0.0%  LazyCompile: *pushContext /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:437:36
+      1    0.0%    0.0%  LazyCompile: *pushAsyncContext node:internal/async_hooks:531:26
+      1    0.0%    0.0%  LazyCompile: *push node:internal/fixed_queue:75:7
+      1    0.0%    0.0%  LazyCompile: *popAsyncContext node:internal/async_hooks:545:25
+      1    0.0%    0.0%  LazyCompile: *passLookupPropertyOption /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/runtime.js:366:34
+      1    0.0%    0.0%  LazyCompile: *normalize node:path:1127:12
+      1    0.0%    0.0%  LazyCompile: *maxWireVersion /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:533:24
+      1    0.0%    0.0%  LazyCompile: *lookupOnContext /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:448:44
+      1    0.0%    0.0%  LazyCompile: *length /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/denque/index.js:85:23
+      1    0.0%    0.0%  LazyCompile: *isPrevWhitespace /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/whitespace-control.js:148:26
+      1    0.0%    0.0%  LazyCompile: *isInline /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:956:30
+      1    0.0%    0.0%  LazyCompile: *handle /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/layer.js:86:49
+      1    0.0%    0.0%  LazyCompile: *getTemplates /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:135:21
+      1    0.0%    0.0%  LazyCompile: *get isActive /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/transactions.js:98:17
+      1    0.0%    0.0%  LazyCompile: *fresh /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/parseurl/index.js:153:16
+      1    0.0%    0.0%  LazyCompile: *formatRaw node:internal/util/inspect:796:19
+      1    0.0%    0.0%  LazyCompile: *formatProperty node:internal/util/inspect:1672:24
+      1    0.0%    0.0%  LazyCompile: *endSession /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:129:15
+      1    0.0%    0.0%  LazyCompile: *empty /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:97:24
+      1    0.0%    0.0%  LazyCompile: *deserialize /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/bson/lib/parser/deserializer.js:25:21
+      1    0.0%    0.0%  LazyCompile: *debug /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/debug/src/debug.js:65:17
+      1    0.0%    0.0%  LazyCompile: *concat node:buffer:535:32
+      1    0.0%    0.0%  LazyCompile: *command /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/server.js:133:12
+      1    0.0%    0.0%  LazyCompile: *checkOut /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:120:13
+      1    0.0%    0.0%  LazyCompile: *checkIn /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:148:12
+      1    0.0%    0.0%  LazyCompile: *callback node:internal/streams/writable:551:44
+      1    0.0%    0.0%  LazyCompile: *append /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      1    0.0%    0.0%  LazyCompile: *afterWriteTick node:internal/streams/writable:483:24
+      1    0.0%    0.0%  LazyCompile: *afterWrite node:internal/streams/writable:488:20
+      1    0.0%    0.0%  LazyCompile: *_storeHeader node:_http_outgoing:374:22
+      1    0.0%    0.0%  LazyCompile: *_getFile /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:299:17
+      1    0.0%    0.0%  LazyCompile: *Timeout.refresh node:internal/timers:210:37
+      1    0.0%    0.0%  LazyCompile: *SourceNode /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/source-map/lib/source-node.js:35:20
+      1    0.0%    0.0%  LazyCompile: *SourceLocation /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:32:24
+      1    0.0%    0.0%  LazyCompile: *Program /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:113:28
+      1    0.0%    0.0%  LazyCompile: *MustacheStatement /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:215:48
+      1    0.0%    0.0%  LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1    0.0%    0.0%  LazyCompile: *Long /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/bson/lib/long.js:58:18
+      1    0.0%    0.0%  LazyCompile: *EventEmitter node:events:84:22
+      1    0.0%    0.0%  LazyCompile: *ContentStatement /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:228:46
+      1    0.0%    0.0%  LazyCompile: *CommandOperation /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/operations/command.js:14:16
+      1    0.0%    0.0%  LazyCompile: *<anonymous> node:internal/validators:236:42
+      1    0.0%    0.0%  LazyCompile: *<anonymous> node:internal/fs/utils:686:40
+      1    0.0%    0.0%  LazyCompile: *<anonymous> node:buffer:348:36
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/runtime.js:360:47
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:274:31
+      1    0.0%    0.0%  Function: ^writetop /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/index.js:270:24
+      1    0.0%    0.0%  Function: ^write_ node:_http_outgoing:730:16
+      1    0.0%    0.0%  Function: ^writeOrBuffer node:internal/streams/writable:366:23
+      1    0.0%    0.0%  Function: ^writeHead node:_http_server:267:19
+      1    0.0%    0.0%  Function: ^writeGeneric node:internal/stream_base_commons:151:22
+      1    0.0%    0.0%  Function: ^writeCommand /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/message_stream.js:35:17
+      1    0.0%    0.0%  Function: ^wrapHelpersToPassLookupProperty /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/runtime.js:359:41
+      1    0.0%    0.0%  Function: ^value node:internal/console/constructor:299:20
+      1    0.0%    0.0%  Function: ^validateNumber node:internal/validators:123:24
+      1    0.0%    0.0%  Function: ^unsigncookie /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/index.js:675:22
+      1    0.0%    0.0%  Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1    0.0%    0.0%  Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      1    0.0%    0.0%  Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1    0.0%    0.0%  Function: ^toNamespacedPath node:path:1266:19
+      1    0.0%    0.0%  Function: ^supportsOpMsg /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:413:23
+      1    0.0%    0.0%  Function: ^startSession /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/topology.js:349:17
+      1    0.0%    0.0%  Function: ^shouldCompress /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/compression/index.js:254:25
+      1    0.0%    0.0%  Function: ^setupParams /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1034:36
+      1    0.0%    0.0%  Function: ^setopts /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/glob/common.js:48:18
+      1    0.0%    0.0%  Function: ^setTimeout node:timers:140:20
+      1    0.0%    0.0%  Function: ^set maxAge /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/session/cookie.js:83:13
+      1    0.0%    0.0%  Function: ^set /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/application.js:352:23
+      1    0.0%    0.0%  Function: ^serveStatic /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/serve-static/index.js:72:31
+      1    0.0%    0.0%  Function: ^serializeBoolean /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/bson/lib/parser/serializer.js:94:26
+      1    0.0%    0.0%  Function: ^serializeBinary /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/bson/lib/parser/serializer.js:459:25
+      1    0.0%    0.0%  Function: ^serialize /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/node_modules/cookie/index.js:101:19
+      1    0.0%    0.0%  Function: ^serialize /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/bson/lib/bson.js:111:19
+      1    0.0%    0.0%  Function: ^ret /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/runtime.js:188:15
+      1    0.0%    0.0%  Function: ^resolve node:internal/modules/esm/loader:454:16
+      1    0.0%    0.0%  Function: ^readSync node:fs:684:18
+      1    0.0%    0.0%  Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      1    0.0%    0.0%  Function: ^readFileSync node:fs:450:22
+      1    0.0%    0.0%  Function: ^readFileAfterStat node:fs:326:27
+      1    0.0%    0.0%  Function: ^readFileAfterClose node:internal/fs/read_file_context:46:28
+      1    0.0%    0.0%  Function: ^readFile node:fs:373:18
+      1    0.0%    0.0%  Function: ^read node:internal/modules/package_json_reader:16:14
+      1    0.0%    0.0%  Function: ^query /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/middleware/query.js:39:24
+      1    0.0%    0.0%  Function: ^preparePath /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:63:21
+      1    0.0%    0.0%  Function: ^prepareMustache /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:99:25
+      1    0.0%    0.0%  Function: ^pipe /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/send/index.js:510:43
+      1    0.0%    0.0%  Function: ^percolateUp node:internal/priority_queue:73:14
+      1    0.0%    0.0%  Function: ^parseurl /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/parseurl/index.js:35:19
+      1    0.0%    0.0%  Function: ^parseConnectOptions /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connect.js:185:29
+      1    0.0%    0.0%  Function: ^parse /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/minimatch/minimatch.js:271:16
+      1    0.0%    0.0%  Function: ^parse /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      1    0.0%    0.0%  Function: ^parse /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/content-type/index.js:106:16
+      1    0.0%    0.0%  Function: ^ondata node:internal/streams/readable:775:18
+      1    0.0%    0.0%  Function: ^once /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/once/once.js:21:15
+      1    0.0%    0.0%  Function: ^onResponseHeaders /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/compression/index.js:140:47
+      1    0.0%    0.0%  Function: ^normalizeParseOptions /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/qs/lib/parse.js:189:59
+      1    0.0%    0.0%  Function: ^nocompress /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/compression/index.js:134:25
+      1    0.0%    0.0%  Function: ^nextTick node:internal/process/task_queues:104:18
+      1    0.0%    0.0%  Function: ^next /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/route.js:114:16
+      1    0.0%    0.0%  Function: ^next /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/index.js:176:16
+      1    0.0%    0.0%  Function: ^mergeSource /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:267:36
+      1    0.0%    0.0%  Function: ^makeOperationHandler /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/server.js:313:30
+      1    0.0%    0.0%  Function: ^lookupProperty /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/runtime.js:118:44
+      1    0.0%    0.0%  Function: ^lookupOnContext /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:448:44
+      1    0.0%    0.0%  Function: ^log /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/winston/lib/winston/transports/file.js:117:6
+      1    0.0%    0.0%  Function: ^lambda /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/runtime.js:141:28
+      1    0.0%    0.0%  Function: ^isstats /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/etag/index.js:104:18
+      1    0.0%    0.0%  Function: ^isUint8Array /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/bson/lib/parser/utils.js:56:22
+      1    0.0%    0.0%  Function: ^isKeyObject node:internal/crypto/keys:613:21
+      1    0.0%    0.0%  Function: ^isEmpty node:internal/fixed_queue:67:10
+      1    0.0%    0.0%  Function: ^infoView file:///mnt/c/Users/jenni/Desktop/DESAFIOS%20PARA%20ENTREGAR%20CODER/Desafio16/src/controllers/info.controllers.js:7:18
+      1    0.0%    0.0%  Function: ^inflate /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/index.js:371:22
+      1    0.0%    0.0%  Function: ^id /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:44:12
+      1    0.0%    0.0%  Function: ^hash /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/index.js:596:14
+      1    0.0%    0.0%  Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+      1    0.0%    0.0%  Function: ^handle /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/index.js:136:31
+      1    0.0%    0.0%  Function: ^getTemplate /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:108:20
+      1    0.0%    0.0%  Function: ^getPartials /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:52:20
+      1    0.0%    0.0%  Function: ^getHeader node:_http_outgoing:590:57
+      1    0.0%    0.0%  Function: ^getDefaultEncoding node:internal/crypto/util:80:28
+      1    0.0%    0.0%  Function: ^getColorDepth node:internal/tty:106:23
+      1    0.0%    0.0%  Function: ^get serverSession /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:93:22
+      1    0.0%    0.0%  Function: ^get node:internal/streams/readable:1163:8
+      1    0.0%    0.0%  Function: ^get loadBalanced /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/server.js:79:21
+      1    0.0%    0.0%  Function: ^get ismaster /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:71:17
+      1    0.0%    0.0%  Function: ^functionCall /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:113:38
+      1    0.0%    0.0%  Function: ^fromString node:buffer:431:20
+      1    0.0%    0.0%  Function: ^fromString /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:454:22
+      1    0.0%    0.0%  Function: ^fromOptions /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/read_concern.js:36:23
+      1    0.0%    0.0%  Function: ^formatValue node:internal/util/inspect:726:21
+      1    0.0%    0.0%  Function: ^formatRaw node:internal/util/inspect:796:19
+      1    0.0%    0.0%  Function: ^finishMaybe node:internal/streams/writable:728:21
+      1    0.0%    0.0%  Function: ^finishIfEnding /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/winston/lib/winston/transports/file.js:96:17
+      1    0.0%    0.0%  Function: ^fastparse /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/parseurl/index.js:95:20
+      1    0.0%    0.0%  Function: ^expressInit /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/middleware/init.js:29:30
+      1    0.0%    0.0%  Function: ^exports.unsign /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/cookie-signature/index.js:36:26
+      1    0.0%    0.0%  Function: ^endReadableNT node:internal/streams/readable:1333:23
+      1    0.0%    0.0%  Function: ^emptyHash /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:554:32
+      1    0.0%    0.0%  Function: ^digest node:internal/crypto/hash:146:40
+      1    0.0%    0.0%  Function: ^deserialize /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/bson/lib/bson.js:162:21
+      1    0.0%    0.0%  Function: ^decodeChunk /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:364:21
+      1    0.0%    0.0%  Function: ^debug /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/debug/src/debug.js:65:17
+      1    0.0%    0.0%  Function: ^dateFromMs node:internal/fs/utils:460:20
+      1    0.0%    0.0%  Function: ^createProtoAccessControl /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/internal/proto-access.js:19:34
+      1    0.0%    0.0%  Function: ^createHash node:crypto:129:20
+      1    0.0%    0.0%  Function: ^createFunctionContext /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:216:56
+      1    0.0%    0.0%  Function: ^createFrame /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/utils.js:110:21
+      1    0.0%    0.0%  Function: ^compression /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/compression/index.js:59:31
+      1    0.0%    0.0%  Function: ^compile /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:490:17
+      1    0.0%    0.0%  Function: ^clearBuffer node:internal/streams/writable:530:21
+      1    0.0%    0.0%  Function: ^checkOut /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:120:13
+      1    0.0%    0.0%  Function: ^checkIn /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:148:12
+      1    0.0%    0.0%  Function: ^checkCollectionName /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:20:29
+      1    0.0%    0.0%  Function: ^castChunk /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:52:19
+      1    0.0%    0.0%  Function: ^attempt /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/passport/lib/middleware/authenticate.js:171:22
+      1    0.0%    0.0%  Function: ^assert node:internal/assert:11:16
+      1    0.0%    0.0%  Function: ^arrayClone node:events:747:20
+      1    0.0%    0.0%  Function: ^anonymous /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:12:42
+      1    0.0%    0.0%  Function: ^afterWriteTick node:internal/streams/writable:483:24
+      1    0.0%    0.0%  Function: ^afterWrite /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/readable-stream/lib/_stream_writable.js:466:20
+      1    0.0%    0.0%  Function: ^afterConnect node:net:1119:22
+      1    0.0%    0.0%  Function: ^adjustOffset node:buffer:1098:22
+      1    0.0%    0.0%  Function: ^addListener node:events:486:58
+      1    0.0%    0.0%  Function: ^addChunk /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/readable-stream/lib/_stream_readable.js:295:18
+      1    0.0%    0.0%  Function: ^accept /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/visitor.js:57:26
+      1    0.0%    0.0%  Function: ^_resolveViewsPath /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:336:20
+      1    0.0%    0.0%  Function: ^_onceWrap node:events:514:19
+      1    0.0%    0.0%  Function: ^_handles_method /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/route.js:58:59
+      1    0.0%    0.0%  Function: ^_flushOutput node:_http_outgoing:950:63
+      1    0.0%    0.0%  Function: ^_destroy node:_http_incoming:176:55
+      1    0.0%    0.0%  Function: ^_addHeaderLine node:_http_incoming:340:24
+      1    0.0%    0.0%  Function: ^Writable.write node:internal/streams/writable:334:36
+      1    0.0%    0.0%  Function: ^Writable.uncork node:internal/streams/writable:342:37
+      1    0.0%    0.0%  Function: ^Transform.push /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/readable-stream/lib/_stream_transform.js:137:37
+      1    0.0%    0.0%  Function: ^Transform._read /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/readable-stream/lib/_stream_transform.js:171:38
+      1    0.0%    0.0%  Function: ^Transaction /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/transactions.js:57:16
+      1    0.0%    0.0%  Function: ^TimersList node:internal/timers:241:20
+      1    0.0%    0.0%  Function: ^Timeout.refresh node:internal/timers:210:37
+      1    0.0%    0.0%  Function: ^StatsBase node:internal/fs/utils:400:19
+      1    0.0%    0.0%  Function: ^SourceNode_walk /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/source-map/lib/source-node.js:221:53
+      1    0.0%    0.0%  Function: ^SourceLocation /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:32:24
+      1    0.0%    0.0%  Function: ^Socket.resume node:net:630:35
+      1    0.0%    0.0%  Function: ^Readable.removeAllListeners node:internal/streams/readable:946:49
+      1    0.0%    0.0%  Function: ^Readable.read /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/readable-stream/lib/_stream_readable.js:392:36
+      1    0.0%    0.0%  Function: ^Readable.push /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/readable-stream/lib/_stream_readable.js:222:36
+      1    0.0%    0.0%  Function: ^RES /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/inflight/inflight.js:18:28
+      1    0.0%    0.0%  Function: ^Program /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:113:28
+      1    0.0%    0.0%  Function: ^Msg /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/commands.js:468:16
+      1    0.0%    0.0%  Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      1    0.0%    0.0%  Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1    0.0%    0.0%  Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1    0.0%    0.0%  Function: ^Long.fromNumber /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/bson/lib/long.js:130:32
+      1    0.0%    0.0%  Function: ^Glob._processGlobStar /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/glob/glob.js:620:44
+      1    0.0%    0.0%  Function: ^FindOperation /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/operations/find.js:14:16
+      1    0.0%    0.0%  Function: ^FindCursor /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cursor/find_cursor.js:29:16
+      1    0.0%    0.0%  Function: ^DerivedLogger.<computed> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/winston/lib/winston/create-logger.js:71:47
+      1    0.0%    0.0%  Function: ^CommandOperation /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/operations/command.js:14:16
+      1    0.0%    0.0%  Function: ^ClientSession /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:54:16
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/validators:84:3
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/validators:73:3
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/console/constructor:338:10
+      1    0.0%    0.0%  Function: ^<anonymous> node:_http_outgoing:564:45
+      1    0.0%    0.0%  Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/topology_description.js:205:55
+      1    0.0%    0.0%  Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/server_selection.js:157:12
+      1    0.0%    0.0%  Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/operations/update.js:71:40
+      1    0.0%    0.0%  Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/logform/json.js:26:25
+      1    0.0%    0.0%  Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:505:34
+      1    0.0%    0.0%  Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/graceful-fs/graceful-fs.js:118:50
+      1    0.0%    0.0%  Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/request.js:467:36
+      1    0.0%    0.0%  Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/index.js:220:28
+      1    0.0%    0.0%  Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:58:51
+      1    0.0%    0.0%  Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/connect-mongodb-session/index.js:134:48
+
+ [C++]:
+   ticks  total  nonlib   name
+    586    3.3%   20.4%  __xstat
+    422    2.4%   14.7%  __lxstat
+    147    0.8%    5.1%  __write
+     97    0.6%    3.4%  __mprotect
+     89    0.5%    3.1%  __libc_read
+     67    0.4%    2.3%  __pthread_cond_wait
+     54    0.3%    1.9%  __libc_open
+     42    0.2%    1.5%  __lll_lock_wait
+     33    0.2%    1.1%  __libc_malloc
+     32    0.2%    1.1%  _IO_fwrite
+     26    0.1%    0.9%  __pthread_cond_signal
+     15    0.1%    0.5%  __libc_free
+     14    0.1%    0.5%  epoll_pwait
+     14    0.1%    0.5%  _IO_file_xsputn
+     12    0.1%    0.4%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+      9    0.1%    0.3%  __GI___pthread_mutex_unlock
+      7    0.0%    0.2%  shutdown
+      7    0.0%    0.2%  __libc_write
+      6    0.0%    0.2%  std::ostream::sentry::sentry(std::ostream&)
+      5    0.0%    0.2%  operator new(unsigned long)
+      5    0.0%    0.2%  __clock_gettime
+      5    0.0%    0.2%  __GI___pthread_mutex_lock
+      4    0.0%    0.1%  operator delete(void*)
+      4    0.0%    0.1%  getrusage
+      3    0.0%    0.1%  std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const
+      3    0.0%    0.1%  epoll_ctl
+      3    0.0%    0.1%  __munmap
+      3    0.0%    0.1%  __GI___pthread_rwlock_wrlock
+      3    0.0%    0.1%  __GI___pthread_rwlock_unlock
+      3    0.0%    0.1%  __GI___pthread_getspecific
+      2    0.0%    0.1%  std::ostream::operator<<(int)
+      2    0.0%    0.1%  std::ostream& std::ostream::_M_insert<long>(long)
+      2    0.0%    0.1%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
+      2    0.0%    0.1%  operator new[](unsigned long)
+      2    0.0%    0.1%  operator delete[](void*)
+      2    0.0%    0.1%  fputc
+      2    0.0%    0.1%  __mmap
+      2    0.0%    0.1%  __libc_calloc
+      2    0.0%    0.1%  __fxstat
+      2    0.0%    0.1%  __errno_location
+      2    0.0%    0.1%  _IO_default_xsputn
+      1    0.0%    0.0%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, unsigned long) const
+      1    0.0%    0.0%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const
+      1    0.0%    0.0%  operator new[](unsigned long, std::nothrow_t const&)
+      1    0.0%    0.0%  accept4
+      1    0.0%    0.0%  __vsnprintf
+      1    0.0%    0.0%  __read_nocancel
+      1    0.0%    0.0%  __pthread_disable_asynccancel
+      1    0.0%    0.0%  __printf_fp
+      1    0.0%    0.0%  __madvise
+      1    0.0%    0.0%  __GI___pthread_mutex_destroy
+      1    0.0%    0.0%  _IO_padn
+      1    0.0%    0.0%  _IO_fflush
+
+ [Summary]:
+   ticks  total  nonlib   name
+   1105    6.3%   38.4%  JavaScript
+   1754   10.0%   61.0%  C++
+   1149    6.6%   39.9%  GC
+  14618   83.6%          Shared libraries
+     18    0.1%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+    586   42.1%    3.3%  __xstat
+    422   30.3%    2.4%  __lxstat
+    117    8.4%    0.7%  __write
+     61    4.4%    0.3%  __mprotect
+     54    3.9%    0.3%  __libc_open
+     27    1.9%    0.2%  _IO_fwrite
+     22    1.6%    0.1%  __libc_malloc
+     14    1.0%    0.1%  __pthread_cond_signal
+     14    1.0%    0.1%  _IO_file_xsputn
+     13    0.9%    0.1%  __lll_lock_wait
+     11    0.8%    0.1%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)
+      6    0.4%    0.0%  std::ostream::sentry::sentry(std::ostream&)
+      5    0.4%    0.0%  __clock_gettime
+      3    0.2%    0.0%  std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const
+      3    0.2%    0.0%  operator new(unsigned long)
+      3    0.2%    0.0%  __libc_free
+      2    0.1%    0.0%  std::ostream::operator<<(int)
+      2    0.1%    0.0%  std::ostream& std::ostream::_M_insert<long>(long)
+      2    0.1%    0.0%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const
+      2    0.1%    0.0%  operator new[](unsigned long)
+      2    0.1%    0.0%  operator delete[](void*)
+      2    0.1%    0.0%  fputc
+      2    0.1%    0.0%  __libc_calloc
+      2    0.1%    0.0%  __fxstat
+      2    0.1%    0.0%  __GI___pthread_rwlock_unlock
+      2    0.1%    0.0%  _IO_default_xsputn
+      1    0.1%    0.0%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, unsigned long) const
+      1    0.1%    0.0%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const
+      1    0.1%    0.0%  operator new[](unsigned long, std::nothrow_t const&)
+      1    0.1%    0.0%  operator delete(void*)
+      1    0.1%    0.0%  __vsnprintf
+      1    0.1%    0.0%  __read_nocancel
+      1    0.1%    0.0%  __GI___pthread_rwlock_wrlock
+      1    0.1%    0.0%  __GI___pthread_mutex_unlock
+      1    0.1%    0.0%  __GI___pthread_mutex_lock
+      1    0.1%    0.0%  __GI___pthread_getspecific
+      1    0.1%    0.0%  _IO_padn
+      1    0.1%    0.0%  _IO_fflush
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  14182   81.1%  /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+   9297   65.6%    /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+   2403   25.8%      Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+   1626   67.7%        Function: ^writeGeneric node:internal/stream_base_commons:151:22
+    839   51.6%          LazyCompile: *writeOrBuffer node:internal/streams/writable:366:23
+    581   69.2%            LazyCompile: *Writable.write node:internal/streams/writable:334:36
+    208   24.8%            LazyCompile: *_write node:internal/streams/writable:284:16
+     50    6.0%            Function: ^_write node:internal/streams/writable:284:16
+    787   48.4%          Function: ^Socket._writeGeneric node:net:769:42
+    787  100.0%            Function: ^Socket._write node:net:806:35
+    777   32.3%        LazyCompile: *writeOrBuffer node:internal/streams/writable:366:23
+    622   80.1%          LazyCompile: *_write node:internal/streams/writable:284:16
+    622  100.0%            Function: ^Writable.write node:internal/streams/writable:334:36
+     96   12.4%          LazyCompile: *ondata node:internal/streams/readable:775:18
+     60   62.5%            LazyCompile: *readableAddChunk node:internal/streams/readable:242:26
+     36   37.5%            LazyCompile: *emit node:events:340:44
+     59    7.6%          Function: ^_write node:internal/streams/writable:284:16
+     59  100.0%            Function: ^Writable.write node:internal/streams/writable:334:36
+   1141   12.3%      Function: ^stat node:internal/modules/cjs/loader:151:14
+    700   61.3%        Function: ^tryFile node:internal/modules/cjs/loader:384:17
+    680   97.1%          Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+    595   87.5%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     81   11.9%            Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+     18    2.6%          Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+     18  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+    437   38.3%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+    424   97.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+    387   91.3%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     37    8.7%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     13    3.0%          LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     10   76.9%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      3   23.1%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+    685    7.4%      Function: ^compileFunction node:vm:308:25
+    673   98.2%        Function: ^wrapSafe node:internal/modules/cjs/loader:1011:18
+    670   99.6%          Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+    652   97.3%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+     18    2.7%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1106:37
+    490    5.3%      Function: ^openSync node:fs:576:18
+    488   99.6%        Function: ^readFileSync node:fs:450:22
+    474   97.1%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+    437   92.2%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+     37    7.8%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     10    2.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      8   80.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      2   20.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:963:33
+    361    3.9%      Function: ^writevGeneric node:internal/stream_base_commons:126:23
+    361  100.0%        Function: ^Socket._writeGeneric node:net:769:42
+    361  100.0%          Function: ^Socket._writev node:net:801:36
+    361  100.0%            Function: ^doWrite node:internal/streams/writable:399:17
+    290    3.1%      Function: ^statSync node:fs:1528:18
+    276   95.2%        Function: ^tryStat /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/view.js:174:17
+    276  100.0%          Function: ^resolve /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/view.js:146:42
+    276  100.0%            Function: ^lookup /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/view.js:104:40
+      7    2.4%        Function: ^tryStatSync node:internal/modules/esm/resolve:160:3
+      3   42.9%          Function: ^finalizeResolution node:internal/modules/esm/resolve:367:28
+      3  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:898:23
+      2   28.6%          LazyCompile: ~packageResolve node:internal/modules/esm/resolve:815:24
+      1   50.0%            LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:898:23
+      1   50.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:898:23
+      1   14.3%          LazyCompile: ~finalizeResolution node:internal/modules/esm/resolve:367:28
+      1  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:898:23
+      1   14.3%          Function: ^packageResolve node:internal/modules/esm/resolve:815:24
+      1  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:898:23
+      3    1.0%        Function: ^fileExists node:internal/modules/esm/resolve:259:20
+      3  100.0%          LazyCompile: ~legacyMainResolve node:internal/modules/esm/resolve:275:27
+      2   66.7%            Function: ^packageResolve node:internal/modules/esm/resolve:815:24
+      1   33.3%            LazyCompile: ~packageResolve node:internal/modules/esm/resolve:815:24
+    285    3.1%      Function: ^readSync node:fs:684:18
+    256   89.8%        Function: ^tryReadSync node:fs:429:21
+    256  100.0%          Function: ^readFileSync node:fs:450:22
+    239   93.4%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+     14    5.5%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1106:37
+     29   10.2%        LazyCompile: *readFileSync node:fs:450:22
+     29  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+     29  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+    220    2.4%      Function: ^read node:internal/modules/package_json_reader:16:14
+    198   90.0%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+     96   48.5%          Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+     86   89.6%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     10   10.4%            LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+     86   43.4%          Function: ^resolveExports node:internal/modules/cjs/loader:472:24
+     86  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      9    4.5%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      9  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      6    3.0%          LazyCompile: ~resolveExports node:internal/modules/cjs/loader:472:24
+      4   66.7%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      2   33.3%            LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+     18    8.2%        LazyCompile: *readPackage node:internal/modules/cjs/loader:290:21
+     18  100.0%          Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+     18  100.0%            LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      3    1.4%        LazyCompile: ~readPackage node:internal/modules/cjs/loader:290:21
+      3  100.0%          LazyCompile: ~resolveExports node:internal/modules/cjs/loader:472:24
+      3  100.0%            LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+    179    1.9%      /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+     14    7.8%        Function: ^databaseNamespace /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:514:27
+     14  100.0%          Function: ^Msg /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/commands.js:468:16
+      9   64.3%            Function: ^command /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:161:12
+      5   35.7%            LazyCompile: *command /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:161:12
+     10    5.6%        Function: ^header /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/response.js:754:29
+      6   60.0%          Function: ^contentType /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/response.js:594:32
+      4   66.7%            Function: ^send /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/response.js:107:25
+      2   33.3%            LazyCompile: *send /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/response.js:107:25
+      2   20.0%          Function: ^send /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/response.js:107:25
+      2  100.0%            Function: ^done /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/response.js:1006:27
+      1   10.0%          LazyCompile: ~send /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/response.js:107:25
+      1  100.0%            LazyCompile: ~done /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/response.js:1006:27
+      1   10.0%          LazyCompile: *send /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/response.js:107:25
+      1  100.0%            LazyCompile: *renderView /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:183:19
+      9    5.0%        Function: ^checkInvalidHeaderChar node:_http_common:232:32
+      9  100.0%          Function: ^<anonymous> node:_http_outgoing:564:45
+      9  100.0%            Function: ^setHeader node:_http_outgoing:574:57
+      8    4.5%        LazyCompile: *quotedString /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+      7   87.5%          Function: ^pushSource /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      7  100.0%            Function: ^append /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      1   12.5%          Function: ^quotedString /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:998:38
+      1  100.0%            Function: ^setupParams /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1034:36
+      7    3.9%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      7  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      5   71.4%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      2   28.6%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      6    3.4%        Function: ^mergeSource /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:267:36
+      5   83.3%          LazyCompile: *compile /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      5  100.0%            LazyCompile: *render /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      1   16.7%          Function: ^createFunctionContext /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:216:56
+      1  100.0%            Function: ^compile /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      6    3.4%        Function: ^fromString /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:454:22
+      6  100.0%          Function: ^ns /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:432:12
+      6  100.0%            Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cursor/abstract_cursor.js:442:46
+      5    2.8%        Function: ^strEscape /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/safe-stable-stringify/stable.js:36:20
+      5  100.0%          Function: ^stringifyReplacerFn /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/safe-stable-stringify/stable.js:386:30
+      5  100.0%            Function: ^stringifyReplacerFn /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/safe-stable-stringify/stable.js:386:30
+      5    2.8%        Function: ^pipe /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/send/index.js:510:43
+      5  100.0%          Function: ^serveStatic /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/serve-static/index.js:72:31
+      4   80.0%            LazyCompile: *next /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/index.js:176:16
+      1   20.0%            Function: ^handle /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/layer.js:86:49
+      5    2.8%        Function: ^expressInit /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/middleware/init.js:29:30
+      4   80.0%          LazyCompile: *next /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/index.js:176:16
+      4  100.0%            Function: ^query /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/middleware/query.js:39:24
+      1   20.0%          Function: ^handle /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%            Function: ^trim_prefix /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/index.js:288:23
+      5    2.8%        /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+      4   80.0%          Function: ^isValid /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/read_preference.js:130:19
+      4  100.0%            Function: ^isValid /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/read_preference.js:146:12
+      1   20.0%          Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/minimatch/minimatch.js:181:26
+      1  100.0%            /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+      4    2.2%        LazyCompile: *parse /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/minimatch/minimatch.js:271:16
+      4  100.0%          /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+      4  100.0%            Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/minimatch/minimatch.js:181:26
+      4    2.2%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      4  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      4  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      4    2.2%        Function: ^format /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/content-type/index.js:65:17
+      4  100.0%          Function: ^setCharset /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/utils.js:250:41
+      2   50.0%            LazyCompile: *send /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/response.js:107:25
+      2   50.0%            Function: ^send /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/response.js:107:25
+      3    1.7%        LazyCompile: *parse /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      2   66.7%          LazyCompile: *render /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      2  100.0%            /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+      1   33.3%          Function: ^parseWithoutProcessing /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+      1  100.0%            Function: ^parse /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:51:15
+      3    1.7%        Function: ^removeColors node:internal/util:76:22
+      3  100.0%          Function: ^isBelowBreakLength node:internal/util/inspect:1740:28
+      3  100.0%            Function: ^reduceToSingleString node:internal/util/inspect:1764:30
+      3    1.7%        Function: ^prepareMustache /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:99:25
+      3  100.0%          LazyCompile: *anonymous /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:12:42
+      2   66.7%            LazyCompile: *parse /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      1   33.3%            Function: ^parse /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      3    1.7%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      3  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      3  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      3    1.7%        Function: ^Module node:internal/modules/cjs/loader:172:16
+      3  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      3  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:991:36
+      3    1.7%        Function: ^FastBuffer node:internal/buffer:958:14
+      2   66.7%          Function: ^alloc node:buffer:359:30
+      2  100.0%            Function: ^serialize /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/bson/lib/bson.js:111:19
+      1   33.3%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      1  100.0%            Function: ^createPool node:buffer:150:20
+      2    1.1%        LazyCompile: ~next /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+      2  100.0%          LazyCompile: ~lex /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:525:30
+      2  100.0%            LazyCompile: ~lex /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:295:25
+      2    1.1%        Function: ^startSession /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/topology.js:349:17
+      1   50.0%          Function: ^next /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cursor/abstract_cursor.js:428:14
+      1  100.0%            Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cursor/abstract_cursor.js:171:52
+      1   50.0%          Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/operations/execute_operation.js:16:48
+      1  100.0%            LazyCompile: *maybePromise /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:482:22
+      2    1.1%        Function: ^scopedId /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/ast.js:14:32
+      2  100.0%          Function: ^PathExpression /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:289:42
+      2  100.0%            Function: ^accept /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:101:26
+      2    1.1%        Function: ^parse /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/minimatch/minimatch.js:271:16
+      2  100.0%          /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+      2  100.0%            Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/minimatch/minimatch.js:181:26
+      2    1.1%        Function: ^messageHandler /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1   50.0%          LazyCompile: *emit node:events:340:44
+      1  100.0%            Function: ^processIncomingData /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1   50.0%          Function: ^emit node:events:340:44
+      1  100.0%            Function: ^processIncomingData /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      2    1.1%        Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      2  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      2  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:991:36
+      2    1.1%        Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/minimatch/minimatch.js:181:26
+      2  100.0%          /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+      2  100.0%            Function: ^make /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/minimatch/minimatch.js:142:15
+
+    586    3.3%  __xstat
+    279   47.6%    LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+    279  100.0%      Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+    279  100.0%        Function: ^Module._load node:internal/modules/cjs/loader:757:24
+    279  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:991:36
+    279  100.0%            Function: ^require node:internal/modules/cjs/helpers:101:31
+    277   47.3%    LazyCompile: *stat node:internal/modules/cjs/loader:151:14
+    193   69.7%      Function: ^tryFile node:internal/modules/cjs/loader:384:17
+    193  100.0%        Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+    158   81.9%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+    158  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     35   18.1%          Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+     28   80.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      7   20.0%            LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+     84   30.3%      Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     84  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     84  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     84  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:991:36
+     30    5.1%    LazyCompile: *tryExtensions node:internal/modules/cjs/loader:400:23
+     30  100.0%      Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+     30  100.0%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+     30  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     30  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+
+    422    2.4%  __lxstat
+    422  100.0%    LazyCompile: *realpathSync node:fs:2408:22
+    348   82.5%      Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+    343   98.6%        Function: ^tryFile node:internal/modules/cjs/loader:384:17
+    333   97.1%          Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+    223   67.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+    110   33.0%            Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+     10    2.9%          Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+     10  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      5    1.4%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      5  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      5  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     59   14.0%      LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+     59  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     59  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     59  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:991:36
+     15    3.6%      LazyCompile: *tryExtensions node:internal/modules/cjs/loader:400:23
+     15  100.0%        Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+     15  100.0%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+     15  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+
+    216    1.2%  /usr/lib/x86_64-linux-gnu/libc-2.31.so
+    132   61.1%    /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+     44   33.3%      /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+      8   18.2%        LazyCompile: *quotedString /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+      6   75.0%          Function: ^pushSource /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      6  100.0%            Function: ^append /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      2   25.0%          Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:130:39
+      2  100.0%            /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+      6   13.6%        LazyCompile: *parse /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      5   83.3%          LazyCompile: *render /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      5  100.0%            /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+      1   16.7%          Function: ^parseWithoutProcessing /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+      1  100.0%            Function: ^parse /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:51:15
+      3    6.8%        Function: ^clearBuffer node:internal/streams/writable:530:21
+      3  100.0%          Function: ^Writable.uncork node:internal/streams/writable:342:37
+      2   66.7%            Function: ^connectionCorkNT node:_http_outgoing:796:26
+      1   33.3%            Function: ^end node:_http_outgoing:833:45
+      2    4.5%        LazyCompile: *render /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      2  100.0%          /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+      2    4.5%        LazyCompile: *compile /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1   50.0%          LazyCompile: *render /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      1  100.0%            /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+      1   50.0%          Function: ^compileInput /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      1  100.0%            Function: ^ret /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      2    4.5%        LazyCompile: *append /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      2  100.0%          LazyCompile: *compile /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      2  100.0%            LazyCompile: *render /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      2    4.5%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      2  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      2  100.0%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      2    4.5%        Function: ^pipe /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/send/index.js:510:43
+      2  100.0%          Function: ^serveStatic /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/serve-static/index.js:72:31
+      2  100.0%            LazyCompile: *next /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/index.js:176:16
+      2    4.5%        Function: ^FastBuffer node:internal/buffer:958:14
+      1   50.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      1  100.0%            Function: ^createPool node:buffer:150:20
+      1   50.0%          Function: ^alloc node:buffer:359:30
+      1  100.0%            Function: ^toBin /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/commands.js:496:10
+      1    2.3%        LazyCompile: ~parsePackageName node:internal/modules/esm/resolve:776:26
+      1  100.0%          LazyCompile: ~packageResolve node:internal/modules/esm/resolve:815:24
+      1  100.0%            LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:898:23
+      1    2.3%        LazyCompile: ~callSiteToString /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/depd/lib/compat/index.js:21:76
+      1  100.0%          LazyCompile: ~get /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/depd/lib/compat/index.js:54:16
+      1  100.0%            Function: ~<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/depd/index.js:1:1
+      1    2.3%        LazyCompile: *pushSource /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      1  100.0%          Function: ^append /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      1  100.0%            LazyCompile: *compile /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1    2.3%        Function: ^stat node:internal/modules/cjs/loader:151:14
+      1  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1    2.3%        Function: ^session /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/index.js:179:26
+      1  100.0%          LazyCompile: *next /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/index.js:176:16
+      1  100.0%            Function: ^expressInit /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/middleware/init.js:29:30
+      1    2.3%        Function: ^render /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      1  100.0%          Function: ^renderView /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:183:19
+      1  100.0%            /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+      1    2.3%        Function: ^quotedString /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+      1  100.0%          Function: ^pushSource /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      1  100.0%            Function: ^append /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      1    2.3%        Function: ^prepareMustache /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:99:25
+      1  100.0%          LazyCompile: *anonymous /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:12:42
+      1  100.0%            LazyCompile: *parse /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      1    2.3%        Function: ^parse /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/commands.js:577:10
+      1  100.0%          Function: ^messageHandler /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1  100.0%            LazyCompile: *processIncomingData /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1    2.3%        Function: ^parse /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/node_modules/cookie/index.js:49:15
+      1  100.0%          Function: ^getcookie /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/index.js:529:19
+      1  100.0%            Function: ^session /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/index.js:179:26
+      1    2.3%        Function: ^getOwn node:internal/bootstrap/loaders:180:16
+      1  100.0%          Function: ^syncExports node:internal/bootstrap/loaders:287:14
+      1  100.0%            Function: ^<anonymous> node:internal/bootstrap/loaders:273:15
+      1    2.3%        Function: ^fromString /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:454:22
+      1  100.0%          Function: ^ns /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:432:12
+      1  100.0%            Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cursor/abstract_cursor.js:442:46
+      1    2.3%        Function: ^databaseNamespace /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:514:27
+      1  100.0%          Function: ^Msg /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/commands.js:468:16
+      1  100.0%            LazyCompile: *command /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:161:12
+      1    2.3%        Function: ^<anonymous> node:internal/fs/utils:357:35
+      1  100.0%          Function: ^<anonymous> node:internal/fs/utils:668:38
+      1  100.0%            Function: ^<anonymous> node:internal/fs/utils:680:42
+      1    2.3%        /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+      1  100.0%          Function: ~<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/color/node_modules/color-convert/conversions.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      9    6.8%      LazyCompile: *compile /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      9  100.0%        LazyCompile: *render /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:150:15
+      9  100.0%          /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+      3    2.3%      LazyCompile: *realpathSync node:fs:2408:22
+      2   66.7%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      2  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      2  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1   33.3%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      3    2.3%      LazyCompile: *createUnsafeBuffer node:internal/buffer:1059:28
+      3  100.0%        Function: ^allocUnsafeSlow node:buffer:382:50
+      3  100.0%          Function: ^readFileAfterStat node:fs:326:27
+      3    2.3%      LazyCompile: *concat node:buffer:535:32
+      2   66.7%        LazyCompile: *read /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:952:9
+      2  100.0%          LazyCompile: *processIncomingData /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1   50.0%            LazyCompile: *writeOrBuffer node:internal/streams/writable:366:23
+      1   50.0%            Function: ^_write /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/message_stream.js:26:11
+      1   33.3%        Function: ^writeCommand /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/message_stream.js:35:17
+      1  100.0%          Function: ^write /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:488:15
+      1  100.0%            Function: ^command /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:161:12
+      3    2.3%      LazyCompile: *FastBuffer node:internal/buffer:958:14
+      2   66.7%        Function: ^alloc node:buffer:359:30
+      2  100.0%          Function: ^serialize /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/bson/lib/bson.js:111:19
+      2  100.0%            Function: ^serializeBson /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/commands.js:530:18
+      1   33.3%        Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      1  100.0%          Function: ^allocUnsafeSlow node:buffer:382:50
+      1  100.0%            Function: ^readFileAfterStat node:fs:326:27
+      3    2.3%      Function: ^afterWriteDispatched node:internal/stream_base_commons:159:30
+      1   33.3%        LazyCompile: *writeOrBuffer node:internal/streams/writable:366:23
+      1  100.0%          LazyCompile: *_write node:internal/streams/writable:284:16
+      1  100.0%            Function: ^Writable.write node:internal/streams/writable:334:36
+      1   33.3%        Function: ^writevGeneric node:internal/stream_base_commons:126:23
+      1  100.0%          Function: ^Socket._writeGeneric node:net:769:42
+      1  100.0%            Function: ^Socket._writev node:net:801:36
+      1   33.3%        Function: ^writeGeneric node:internal/stream_base_commons:151:22
+      1  100.0%          LazyCompile: *writeOrBuffer node:internal/streams/writable:366:23
+      1  100.0%            LazyCompile: *Writable.write node:internal/streams/writable:334:36
+      3    2.3%      Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      3  100.0%        Function: ^Module.require node:internal/modules/cjs/loader:991:36
+      3  100.0%          Function: ^require node:internal/modules/cjs/helpers:101:31
+      1   33.3%            Function: ~<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/source-map/lib/source-map-generator.js:1:1
+      1   33.3%            Function: ~<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/send/index.js:1:1
+      1   33.3%            Function: ~<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/faker/lib/locales/hy/index.js:1:1
+      2    1.5%      LazyCompile: *resolve node:path:1091:10
+      1   50.0%        Function: ^lookup /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/view.js:104:40
+      1  100.0%          Function: ^View /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/view.js:52:14
+      1  100.0%            Function: ^render /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/application.js:531:29
+      1   50.0%        Function: ^_resolveLayoutPath /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:359:21
+      1  100.0%          Function: ^renderView /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-handlebars/lib/express-handlebars.js:183:19
+      1  100.0%            /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+      2    1.5%      Function: ^setHeader node:_http_outgoing:574:57
+      2  100.0%        Function: ^header /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/response.js:754:29
+      1   50.0%          Function: ^send /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/response.js:107:25
+      1  100.0%            Function: ^done /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/response.js:1006:27
+      1   50.0%          Function: ^cacheControl file:///mnt/c/Users/jenni/Desktop/DESAFIOS%20PARA%20ENTREGAR%20CODER/Desafio16/src/middlewares/cache.middlewares.js:1:29
+      1  100.0%            Function: ^handle /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/layer.js:86:49
+      2    1.5%      Function: ^onwrite node:internal/streams/writable:426:17
+      2  100.0%        Function: ^afterWriteDispatched node:internal/stream_base_commons:159:30
+      2  100.0%          Function: ^writeGeneric node:internal/stream_base_commons:151:22
+      2  100.0%            Function: ^Socket._writeGeneric node:net:769:42
+      2    1.5%      Function: ^createFunctionContext /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:216:56
+      2  100.0%        Function: ^compile /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      2  100.0%          Function: ^compileInput /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      2  100.0%            Function: ^ret /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      3    1.4%    LazyCompile: *compileFunction node:vm:308:25
+      3  100.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1011:18
+      3  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      3  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      3  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+
+    209    1.2%  [vdso]
+     52   24.9%    /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+     12   23.1%      Function: ^ConnectionPoolMonitoringEvent /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool_events.js:11:16
+      8   66.7%        Function: ^ConnectionCheckOutStartedEvent /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool_events.js:90:16
+      8  100.0%          Function: ^checkOut /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:120:13
+      8  100.0%            Function: ^withConnection /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:249:19
+      3   25.0%        Function: ^ConnectionCheckedInEvent /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool_events.js:128:16
+      3  100.0%          Function: ^checkIn /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:148:12
+      3  100.0%            Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:266:27
+      1    8.3%        Function: ^ConnectionCheckedOutEvent /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool_events.js:115:16
+      1  100.0%          Function: ^processWaitQueue /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:417:26
+      1  100.0%            LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+     10   19.2%      Function: ^get maxAge /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/session/cookie.js:104:13
+     10  100.0%        Function: ^set expires /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/session/cookie.js:60:14
+      5   50.0%          Function: ^set maxAge /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/session/cookie.js:83:13
+      5  100.0%            Function: ^resetMaxAge /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/session/session.js:58:68
+      5   50.0%          /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+      5  100.0%            Function: ^Cookie /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/session/cookie.js:25:46
+      3    5.8%      LazyCompile: *checkOut /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:120:13
+      3  100.0%        Function: ^withConnection /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:249:19
+      3  100.0%          Function: ^command /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/server.js:133:12
+      2   66.7%            Function: ^executeCommand /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/operations/command.js:48:19
+      1   33.3%            Function: ^execute /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/operations/find.js:31:12
+      2    3.8%      Function: ^set maxAge /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/session/cookie.js:83:13
+      2  100.0%        Function: ^resetMaxAge /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/session/session.js:58:68
+      2  100.0%          Function: ^touch /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/session/session.js:47:56
+      2  100.0%            Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/index.js:220:28
+      2    3.8%      /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+      1   50.0%        LazyCompile: ~forProperties /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/winston/lib/winston/common.js:52:16
+      1  100.0%          Function: ~<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/winston/lib/winston.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1   50.0%        Function: ^compileFunction node:vm:308:25
+      1  100.0%          Function: ^wrapSafe node:internal/modules/cjs/loader:1011:18
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1    1.9%      LazyCompile: ~urlParse node:url:153:18
+      1  100.0%        LazyCompile: ~OAuth2Strategy /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/passport-oauth2/lib/strategy.js:77:24
+      1  100.0%          LazyCompile: ~Strategy /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/passport-facebook/lib/strategy.js:48:18
+      1  100.0%            Script: ~<anonymous> file:///mnt/c/Users/jenni/Desktop/DESAFIOS%20PARA%20ENTREGAR%20CODER/Desafio16/src/utils/passport.utils.js:1:1
+      1    1.9%      LazyCompile: ~set search node:internal/url:942:13
+      1  100.0%        /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+      1  100.0%          LazyCompile: ~finalizeResolution node:internal/modules/esm/resolve:367:28
+      1  100.0%            LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:898:23
+      1    1.9%      LazyCompile: ~session /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/index.js:179:26
+      1  100.0%        LazyCompile: ~handle /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          LazyCompile: ~trim_prefix /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/index.js:288:23
+      1  100.0%            LazyCompile: ~<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/index.js:275:64
+      1    1.9%      LazyCompile: ~prependListener /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/readable-stream/lib/_stream_readable.js:95:25
+      1  100.0%        LazyCompile: ~Readable.pipe /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/readable-stream/lib/_stream_readable.js:608:36
+      1  100.0%          LazyCompile: ~add /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/winston/lib/winston/logger.js:337:6
+      1  100.0%            LazyCompile: ~<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/winston/lib/winston/logger.js:118:26
+      1    1.9%      LazyCompile: ~maybeCacheSourceMap node:internal/source_map/source_map_cache:74:29
+      1  100.0%        LazyCompile: ~moduleStrategy node:internal/modules/esm/translators:134:56
+      1  100.0%          LazyCompile: ~moduleProvider node:internal/modules/esm/loader:273:28
+      1  100.0%            /home/jenny/.nvm/versions/node/v17.1.0/bin/node
+      1    1.9%      LazyCompile: ~handle /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/router/index.js:136:31
+      1  100.0%        LazyCompile: ~handle /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/application.js:158:29
+      1  100.0%          LazyCompile: ~app /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express/lib/express.js:38:21
+      1  100.0%            Function: ^emit node:events:340:44
+      1    1.9%      LazyCompile: ~formatProperty node:internal/util/inspect:1672:24
+      1  100.0%        LazyCompile: ~formatRaw node:internal/util/inspect:796:19
+      1  100.0%          LazyCompile: ~formatValue node:internal/util/inspect:726:21
+      1  100.0%            LazyCompile: ~inspect node:internal/util/inspect:286:17
+      1    1.9%      LazyCompile: ~endReadableNT node:internal/streams/readable:1333:23
+      1  100.0%        Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.9%      LazyCompile: ~basename node:path:1306:11
+      1  100.0%        LazyCompile: ~findLongestRegisteredExtension node:internal/modules/cjs/loader:413:40
+      1  100.0%          LazyCompile: ~Module.load node:internal/modules/cjs/loader:963:33
+      1  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      1    1.9%      LazyCompile: ~Authenticator.init /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/passport/lib/authenticator.js:29:40
+      1  100.0%        LazyCompile: ~Authenticator /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/passport/lib/authenticator.js:13:23
+      1  100.0%          Function: ~<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/passport/lib/index.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1    1.9%      LazyCompile: ~<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:789:12
+      1  100.0%        LazyCompile: ~done /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/monitor.js:224:22
+      1  100.0%          LazyCompile: ~<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/monitor.js:230:30
+      1  100.0%            LazyCompile: ~<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/monitor.js:200:52
+      1    1.9%      LazyCompile: ~<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:266:27
+      1  100.0%        LazyCompile: ~handleOperationResult /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/server.js:315:42
+      1  100.0%          Function: ^messageHandler /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1  100.0%            Function: ^emit node:events:340:44
+      1    1.9%      LazyCompile: ~<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connect.js:73:85
+      1  100.0%        Function: ^messageHandler /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1  100.0%          Function: ^emit node:events:340:44
+      1  100.0%            Function: ^processIncomingData /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1    1.9%      LazyCompile: ~<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/express-session/index.js:220:28
+      1  100.0%        LazyCompile: ~writeHead /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/on-headers/index.js:28:29
+      1  100.0%          LazyCompile: ~writeHead /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/on-headers/index.js:28:29
+      1  100.0%            LazyCompile: ~_implicitHeader node:_http_server:262:68
+      1    1.9%      LazyCompile: *wrap /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:101:22
+      1  100.0%        Function: ^push /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:868:22
+      1  100.0%          Function: ^replaceStack /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:892:38
+      1  100.0%            Function: ^resolvePath /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:492:36
+      1    1.9%      LazyCompile: *processWaitQueue /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:417:26
+      1  100.0%        LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.9%      LazyCompile: *checkIn /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:148:12
+      1  100.0%        LazyCompile: *<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:266:27
+      1  100.0%          Function: ^handleOperationResult /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/server.js:315:42
+      1  100.0%            Function: ^messageHandler /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1    1.9%      Function: ~<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+      1  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      1    1.9%      Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.9%      Function: ^createFunctionContext /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:216:56
+      1  100.0%        Function: ^compile /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%          Function: ^compileInput /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      1  100.0%            Function: ^ret /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      1    1.9%      Function: ^_read /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/message_stream.js:30:10
+      1  100.0%        Function: ^Readable.read node:internal/streams/readable:402:35
+      1  100.0%          Function: ^maybeReadMore_ node:internal/streams/readable:632:24
+      1  100.0%            LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.9%      Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%        Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%          Function: ^Module.require node:internal/modules/cjs/loader:991:36
+      1  100.0%            Function: ^require node:internal/modules/cjs/helpers:101:31
+      1    1.9%      Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/connect-mongodb-session/index.js:134:48
+      1  100.0%        Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:494:13
+      1  100.0%          Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cursor/abstract_cursor.js:477:62
+      1  100.0%            LazyCompile: *endSession /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:129:15
+     22   10.5%    LazyCompile: *hasTimedOut /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:535:16
+     13   59.1%      Function: ^release /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:594:12
+      9   69.2%        LazyCompile: *endSession /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:129:15
+      7   77.8%          Function: ^cleanupCursor /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cursor/abstract_cursor.js:509:23
+      7  100.0%            Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cursor/abstract_cursor.js:442:46
+      2   22.2%          Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/operations/execute_operation.js:46:70
+      2  100.0%            Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/operations/update.js:71:40
+      4   30.8%        Function: ^completeEndSession /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:138:40
+      4  100.0%          Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:133:52
+      4  100.0%            LazyCompile: *maybePromise /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:482:22
+      9   40.9%      Function: ^acquire /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:577:12
+      9  100.0%        Function: ^get serverSession /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:93:22
+      9  100.0%          Function: ^applySession /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:643:22
+      5   55.6%            Function: ^command /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:161:12
+      4   44.4%            LazyCompile: *command /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:161:12
+     19    9.1%    LazyCompile: *now /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:708:13
+      9   47.4%      Function: ^calculateDurationInMs /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/utils.js:714:31
+      9  100.0%        Function: ^hasTimedOut /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:535:16
+      5   55.6%          Function: ^acquire /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:577:12
+      5  100.0%            Function: ^get serverSession /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:93:22
+      4   44.4%          Function: ^release /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:594:12
+      4  100.0%            Function: ^completeEndSession /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:138:40
+      8   42.1%      Function: ^applySession /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sessions.js:643:22
+      6   75.0%        Function: ^command /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:161:12
+      3   50.0%          LazyCompile: *<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/server.js:171:42
+      2   66.7%            LazyCompile: *processWaitQueue /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:417:26
+      1   33.3%            Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:264:23
+      3   50.0%          Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/server.js:171:42
+      2   66.7%            Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:264:23
+      1   33.3%            LazyCompile: *processWaitQueue /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:417:26
+      2   25.0%        LazyCompile: *command /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:161:12
+      2  100.0%          Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/server.js:171:42
+      2  100.0%            LazyCompile: *processWaitQueue /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:417:26
+      1    5.3%      LazyCompile: *checkIn /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:148:12
+      1  100.0%        Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:266:27
+      1  100.0%          Function: ^handleOperationResult /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/server.js:315:42
+      1  100.0%            Function: ^messageHandler /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1    5.3%      Function: ^markAvailable /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection.js:103:18
+      1  100.0%        Function: ^checkIn /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:148:12
+      1  100.0%          Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/cmap/connection_pool.js:266:27
+      1  100.0%            Function: ^handleOperationResult /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/server.js:315:42
+      8    3.8%    LazyCompile: *insert node:internal/timers:350:16
+      6   75.0%      Function: ^setTimeout node:timers:140:20
+      6  100.0%        Function: ^selectServer /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/sdam/topology.js:281:17
+      6  100.0%          Function: ^executeWithServerSelection /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/operations/execute_operation.js:65:36
+      6  100.0%            Function: ^<anonymous> /mnt/c/Users/jenni/Desktop/DESAFIOS PARA ENTREGAR CODER/Desafio16/node_modules/mongodb/lib/operations/execute_operation.js:16:48
+      2   25.0%      Function: ^setUnrefTimeout node:internal/timers:372:25
+      2  100.0%        Function: ^setStreamTimeout node:internal/stream_base_commons:254:26
+      2  100.0%          Function: ^resOnFinish node:_http_server:786:21
+      2  100.0%            LazyCompile: *emit node:events:340:44
+

@@ -1,0 +1,36 @@
+{
+    "name": "desafio15",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node ./src/index.js",
+        "dev": "NODE_ENV=development nodemon ./src/index.js --port 8080",
+        "prod": "NODE_ENV=production nodemon ./src/index.js --port 8080",
+        "testCarga": "node benchmark.js",
+        "startCarga": "0x src/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^8.0.1",
+        "nodemon": "^2.0.15"
+    },
+    "dependencies": {
+        "autocannon": "^7.5.0",
+        "compression": "^1.7.4",
+        "connect-mongodb-session": "^3.1.1",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "express-handlebars": "^5.3.4",
+        "express-session": "^1.17.2",
+        "faker": "^5.5.3",
+        "minimist": "^1.2.5",
+        "passport": "^0.5.0",
+        "passport-facebook": "^3.0.0",
+        "winston": "^3.3.3"
+    }
+}

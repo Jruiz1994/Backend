@@ -1,0 +1,25 @@
+<div>
+  <h1 style="text-align: center;">Listado de Productos:</h1>
+  {{#if productos}}
+  <table style="margin: 0 auto; width:50%" class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Foto</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each productos as |producto| }}
+      <tr>
+          <td> {{ producto.title }} </td>
+          <td> $ {{ producto.price }} </td>
+          <td> <img src="{{producto.thumbnail}}" style="width: 150px;">  </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  {{else}}
+  <h2 style="text-align: center; color:grey">No se encontraron productos</h2>
+  {{/if}}
+</div>
